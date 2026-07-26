@@ -27,7 +27,6 @@ def build_pptx_deck():
     WHITE = RGBColor(255, 255, 255)
     LIGHT_PURPLE = RGBColor(226, 217, 243)
     MUTED_TEXT = RGBColor(170, 160, 190)
-    GREEN_ACCENT = RGBColor(34, 197, 94)
 
     steps_list = ["Context", "Agent's Market", "Research", "Insights", "Problem Canvas", "Ideation", "MVP", "Journey", "Metrics", "Risks + GTM"]
 
@@ -42,7 +41,7 @@ def build_pptx_deck():
             "tagline": "QUICK COMMERCE GOT FASTER. CATEGORY CHOICE GOT HARDER.",
             "title": "1. Context & Brief: Solving Category Tunnel Vision in Quick Commerce",
             "subtitle": "Why 71.2% of habitual grocery buyers checkout in <45s without exploring high-margin non-grocery categories",
-            "box1_title": "📋 THE STRATEGIC BRIEF",
+            "box1_title": "📋 THE STRATEGIC BRIEF & SCOPE",
             "box1_bullets": [
                 "Role & Scope: PM on Zepto Growth Team driving non-grocery cross-category trial.",
                 "Problem Core: 71.2% of active users strictly repeat daily grocery orders (Milk, Eggs, Bread).",
@@ -56,8 +55,8 @@ def build_pptx_deck():
                 "Category Drop-off Cliff: Non-grocery trial drops to <8.2% of MAC.",
                 "Margin Expansion Moat: Personal care & pet supplies yield 35%–50% gross margins."
             ],
-            "bottom_title": "⚠️ THE PARADOX: ROUTINE ORDERS = HIGH SPEED, ZERO EXPLORATION",
-            "bottom_text": "Users checkout in <45 seconds before looking at ad banners. Banner ads fail because users suffer from Impulse & Dark-Pattern Fatigue. Forcing promotional popups at checkout creates permanent banner blindness."
+            "bottom_title": "🔗 DIRECT REVIEWER DATA & LIVE APP ACCESS LINKS",
+            "bottom_text": "Live Streamlit App: https://zeptomvp.streamlit.app | GitHub Repository: https://github.com/akhyashukla03/zeptomvp | Raw Reviews JSON Data: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json"
         },
         {
             "slide_num": 2,
@@ -85,9 +84,9 @@ def build_pptx_deck():
             "tagline": "THE PROBLEM ISN'T BANNER VISIBILITY. IT'S FINANCIAL & QUALITY RISK BEFORE CHECKOUT.",
             "title": "3. AI Discovery Engine: 2,000 Social Reviews & N=22 Survey Data",
             "subtitle": "Synthesizing 10 multi-platform channels (Play Store, App Store, Reddit, Quora, LinkedIn, ProductHunt, Trustpilot, Twitter, MouthShut)",
-            "box1_title": "📊 2,000 SCRAPED REVIEWS BREAKDOWN",
+            "box1_title": "📊 2,000 SCRAPED REVIEWS BREAKDOWN (RAW DATA LINK INCLUDED)",
             "box1_bullets": [
-                "Dataset Split: 33.3% Category Discovery Barriers vs 66.7% Operational Noise.",
+                "Dataset Access: Direct JSON link at https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json",
                 "Quality & Expiry Fear (20.1%): Fear active ingredients degrade in hot dark stores.",
                 "Planned Buy Mismatch (19.9%): Preference for buying diapers & pet food in bulk on DMart.",
                 "Ecological Packaging Guilt (15.3%): Friction around single-item plastic packaging waste.",
@@ -170,21 +169,23 @@ def build_pptx_deck():
         {
             "slide_num": 7,
             "tagline": "THE SOLUTION: DISCOVERY PASS, THE TRIAL LAYER FOR ZEPTO.",
-            "title": "7. MVP Product Solution: 4-Step Discovery Loop Prototype",
-            "subtitle": "Converting habitual grocery refillers into multi-category buyers with Figma UI Mockups",
-            "box1_title": "1. MIRROR / SAMPLE & 2. AUDIT / PREVIEW",
+            "title": "7. MVP Product Solution: Complete Feature Suite Breakdown",
+            "subtitle": "Showcasing all 6 built features converting grocery buyers to subscribers with Figma UI Mockup",
+            "box1_title": "💎 BUILT FEATURES 1, 2 & 3",
             "box1_bullets": [
-                "1. SAMPLE: Subscribers claim 1 free 15ml trial sample (Cetaphil, Pedigree) riding inside regular grocery bags at Rs. 0.",
-                "2. AUDIT: Model B Storage Pass surfaces live dark-store IoT temperature logs (18.2°C) & automated CCTV rack snapshots."
+                "1. 💎 B2B Free Trial Sampler: 1-click claim (Cetaphil, Pedigree, Portronics) inside grocery bag at Rs. 0.",
+                "2. 📦 Model B Storage Audit: Live dark-store IoT temp logs (18.2°C) & automated CCTV rack snapshots ($15/mo AWS S3 cost).",
+                "3. 🏷️ DISCOVERY100 Voucher: Post-trial nudge unlocking Rs. 100 off full-size products."
             ],
-            "box2_title": "3. CONVERT / RUN & 4. LOCK-IN / LEARN",
+            "box2_title": "🏆 BUILT FEATURES 4, 5 & 6",
             "box2_bullets": [
-                "3. CONVERT: Post-trial nudge unlocks Rs. 100 Discovery Voucher restricted to full-size products in new categories.",
-                "4. LOCK-IN: 5-Category Streak Board (🥛 Pantry, 🍿 Snacks, 💄 Beauty, 🐾 Pets, 🔌 Utility) unlocks 2x Grocery Points."
+                "4. 🏆 Category Streak Board: 5-sticker quest (🥛 Pantry, 🍿 Snacks, 💄 Beauty, 🐾 Pets, 🔌 Utility) unlocking 2x Grocery Points.",
+                "5. 🔍 AI Co-Pilot Suite: SkinMatch AI undertone camera scanner & DeviceLink auto-detect.",
+                "6. 🚚 15-Min Doorstep Rider Swap: Instant replacement eliminating return bot anxiety."
             ],
             "image_path": mvp_img if os.path.exists(mvp_img) else None,
-            "bottom_title": "🚀 USER FLOW MOAT",
-            "bottom_text": "Turns habitual grocery refilling into a high-margin cross-category engine without interrupting the 45-second checkout speed."
+            "bottom_title": "🚀 USER FLOW MOAT & INTERACTIVE PROTOTYPE",
+            "bottom_text": "Turns habitual grocery refilling into a high-margin cross-category engine without interrupting 45s checkout speed. Try live at https://zeptomvp.streamlit.app"
         },
         {
             "slide_num": 8,
@@ -230,23 +231,24 @@ def build_pptx_deck():
         {
             "slide_num": 10,
             "tagline": "DISCOVERY PASS TURNS HESITATION INTO REPEATED, TRUSTED RUNS AND SCALES NEXT-TIER ARR.",
-            "title": "10. Monetization, Phased Rollout & Risk Mitigation",
-            "subtitle": "Financial flywheel, 3-phase launch, and 4 core risk mitigations",
-            "box1_title": "🚀 3-PHASE ROLLOUT ROADMAP",
+            "title": "10. Monetization, Phased Rollout & Reviewer Access Directory",
+            "subtitle": "Financial flywheel, 3-phase launch, 4 risk mitigations, and direct reviewer data links",
+            "box1_title": "🚀 3-PHASE ROLLOUT & MONETIZATION",
             "box1_bullets": [
                 "Phase 1 (Beta): 10% Bangalore Cohort (30 days) with Cetaphil & Pedigree.",
                 "Phase 2 (Pro Rollout): All Tier-1 Metros (Mumbai, Delhi, Bangalore, Hyderabad).",
-                "Phase 3 (GA): Pan-India rollout across 500+ Dark Store hubs."
+                "Phase 3 (GA): Pan-India rollout across 500+ Dark Store hubs.",
+                "Monetization: Rs. 59/mo Pass + B2B Brand Listing Fees (Brands pay Rs. 15 per distributed sample)."
             ],
-            "box2_title": "⚠️ RISKS & MITIGATIONS",
+            "box2_title": "🔗 DIRECT REVIEWER DATA ACCESS DIRECTORY",
             "box2_bullets": [
-                "HIGH - Dark Store Expiry Fears → Mitigation: Model B Automated CCTV Snapshots & IoT Temp Logs ($15/mo).",
-                "HIGH - Return Bot Anxiety → Mitigation: 15-Minute Doorstep Rider Swap & Shade Match Shield.",
-                "MEDIUM - Brand Supply Shortage → Mitigation: Multi-brand fallback sampling pools.",
-                "MEDIUM - Competitor Copying → Mitigation: Category Streak Grocery Point Lock-In."
+                "🌐 Live Streamlit App: https://zeptomvp.streamlit.app",
+                "🐙 GitHub Source Code: https://github.com/akhyashukla03/zeptomvp",
+                "📊 Raw Scraped Reviews JSON: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json",
+                "👥 Primary Survey & Transcripts: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/interview_transcripts.json"
             ],
-            "bottom_title": "💰 MONETIZATION & B2B AD ENGINE",
-            "bottom_text": "Zepto Discovery Pass @ Rs. 59/mo + B2B Brand Listing Fees (Brands pay Rs. 15 per distributed trial sample)."
+            "bottom_title": "⚠️ RISKS & MITIGATIONS SUMMARY",
+            "bottom_text": "Expiry Fear ➔ CCTV Storage Audit ($15/mo) | Return Anxiety ➔ 15-Min Rider Swap | Supply Shortage ➔ Multi-brand fallback pool | Copying ➔ Points Streak Lock-In"
         }
     ]
 

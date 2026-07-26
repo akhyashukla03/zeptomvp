@@ -12,7 +12,7 @@
       "Category Drop-off Cliff: Non-grocery trial drops to <8.2% of MAC.",
       "Margin Expansion Moat: Personal care & pet supplies yield 35%–50% gross margins."
     ],
-    "the_paradox": "Routine Orders = High Speed, Zero Exploration. Users checkout in <45 seconds before looking at ad banners. Banner ads fail because users suffer from Impulse & Dark-Pattern Fatigue."
+    "the_paradox": "Live Streamlit App: https://zeptomvp.streamlit.app | GitHub: https://github.com/akhyashukla03/zeptomvp | Raw Reviews JSON: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json"
   },
   {
     "slide_number": 2,
@@ -46,9 +46,9 @@
       {"stat": "35–50%", "label": "Gross Margin in Non-Grocery Items"}
     ],
     "quotes": [
+      "\"Dataset Link: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json\"",
       "\"Quality & Expiry Fear (20.1%): Fear active acids degrade in hot dark stores. - Neha, Bangalore\"",
-      "\"Planned Buy Mismatch (19.9%): Preference for buying diapers & pet food in bulk on DMart. - Dr. Shalini, Delhi\"",
-      "\"Return Bot Anxiety (50%): Refund chatbot loops prevent buying gadgets on Zepto. - Karan, Mumbai\""
+      "\"Planned Buy Mismatch (19.9%): Preference for buying diapers & pet food in bulk on DMart. - Dr. Shalini, Delhi\""
     ],
     "conclusion": "Users don't need intrusive checkout banner ads. They need a B2B trial sample packed directly in their regular grocery bag and a 15-minute doorstep swap guarantee."
   },
@@ -103,12 +103,12 @@
     "slide_number": 7,
     "tagline": "THE SOLUTION: DISCOVERY PASS, THE TRIAL LAYER FOR ZEPTO.",
     "step_name": "MVP",
-    "title": "7. MVP Product Solution: 4-Step Discovery Loop Prototype",
-    "subtitle": "Converting habitual grocery refillers into multi-category buyers with Figma UI Mockups",
+    "title": "7. MVP Product Solution: Complete Feature Suite Breakdown",
+    "subtitle": "Showcasing all 6 built features converting grocery buyers to subscribers with Figma UI Mockup",
     "steps": [
       {"num": "1. SAMPLE", "title": "1-Click B2B Free Trial", "desc": "Subscribers claim 1 free 15ml trial sample (Cetaphil, Pedigree) riding inside regular grocery bags at Rs. 0."},
-      {"num": "2. AUDIT", "title": "Model B Storage Pass", "desc": "Surfaces live dark-store IoT temperature logs (18.2°C) & automated CCTV rack snapshots."},
-      {"num": "3. CONVERT", "title": "Rs. 100 Discovery Voucher", "desc": "Post-trial nudge unlocks Rs. 100 Discovery Voucher restricted to full-size products in new categories."},
+      {"num": "2. AUDIT", "title": "Model B Storage Pass", "desc": "Surfaces live dark-store IoT temperature logs (18.2°C) & automated CCTV rack snapshots ($15/mo AWS S3 cost)."},
+      {"num": "3. CONVERT", "title": "Rs. 100 Discovery Voucher", "desc": "Post-trial nudge unlocking Rs. 100 off full-size products in new categories."},
       {"num": "4. LOCK-IN", "title": "Category Streak Board", "desc": "5-Category Streak Board (🥛 Pantry, 🍿 Snacks, 💄 Beauty, 🐾 Pets, 🔌 Utility) unlocks 2x Grocery Points."}
     ]
   },
@@ -148,9 +148,9 @@
     "slide_number": 10,
     "tagline": "DISCOVERY PASS TURNS HESITATION INTO REPEATED, TRUSTED RUNS AND SCALES NEXT-TIER ARR.",
     "step_name": "Risks + GTM",
-    "title": "10. Monetization, Phased Rollout & Risk Mitigation",
-    "subtitle": "Financial flywheel, 3-phase launch, and 4 core risk mitigations",
-    "monetization": "Zepto Discovery Pass @ Rs. 59/mo + B2B Brand Listing Fees (Brands pay Rs. 15 per distributed trial sample).",
+    "title": "10. Monetization, Phased Rollout & Reviewer Access Directory",
+    "subtitle": "Financial flywheel, 3-phase launch, 4 risk mitigations, and direct reviewer data links",
+    "monetization": "Live Streamlit: https://zeptomvp.streamlit.app | GitHub Repo: https://github.com/akhyashukla03/zeptomvp | Raw Data: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json",
     "rollout": [
       "Phase 1 (Beta): 10% Bangalore Cohort (30 days) with Cetaphil & Pedigree.",
       "Phase 2 (Pro Rollout): All Tier-1 Metros (Mumbai, Delhi, Bangalore, Hyderabad).",
