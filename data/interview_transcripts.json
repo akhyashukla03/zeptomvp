@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "name": "Pooja Iyer",
+    "age": 29,
+    "profession": "WFH Software Engineer",
+    "city": "Bangalore",
+    "frequency": "Daily or every alternate day",
+    "typical_cart": "Organic milk, sourdough bread, eggs, coriander, bananas, onions",
+    "persona": "The Habitual WFH Chef & Pet Parent",
+    "transcript": [
+      {
+        "speaker": "Interviewer",
+        "text": "Thanks for joining, Pooja. Tell me, how often do you use Zepto and what do you typically buy?"
+      },
+      {
+        "speaker": "Pooja",
+        "text": "I use it almost daily. Honestly, it's a habit. I wake up, see we are out of bread or milk, open the app, and order. I also buy fresh veggies for lunch or dinner. It's always milk, eggs, bread, and basic vegetables."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Have you ever bought non-grocery items on Zepto, like beauty products, pet supplies, or electronics?"
+      },
+      {
+        "speaker": "Pooja",
+        "text": "Almost never. Wait, I didn't even know they sold pet supplies! I have a cat, and I buy her wet food and litter from Amazon or Heads Up For Tails. Does Zepto really have pet stuff?"
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Yes, they have a dedicated Pet Care section. Why do you think you haven't seen it?"
+      },
+      {
+        "speaker": "Pooja",
+        "text": "Because when I open the app, I am in a hurry. I click the search bar, type 'milk', go to cart, and hit buy. I don't browse the home page. There are too many flashy banners, and my brain just tunes them out as ads."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "If Zepto suggested a premium cat treat on your checkout screen with a 20% discount, saying it can arrive in 10 minutes with your milk, would you buy it?"
+      },
+      {
+        "speaker": "Pooja",
+        "text": "Actually, yes! If it's a brand I recognize like Sheba or Temptations, and it's right there at checkout, I would add it. It saves me a trip or a 2-day wait on Amazon. But I'd only do it if I trust the brand."
+      }
+    ],
+    "validated_insight": "Confirms 'Lack of Awareness' and 'Habitual Lock-in' due to search-centric speed. Validates that a contextual checkout nudge for trusted brands would convert her."
+  },
+  {
+    "id": 2,
+    "name": "Karan Mehta",
+    "age": 34,
+    "profession": "Product Manager",
+    "city": "Mumbai",
+    "frequency": "3-4 times a week",
+    "typical_cart": "Diet Coke, potato chips, ready-to-eat meals, instant noodles, ice cream",
+    "persona": "The Midnight Snacker & Impulse Buyer",
+    "transcript": [
+      {
+        "speaker": "Interviewer",
+        "text": "Karan, what drives your purchases on Zepto, and do you explore other categories?"
+      },
+      {
+        "speaker": "Karan",
+        "text": "Mostly convenience and instant cravings. I order late at night during football matches or work marathons. Chips, sodas, sometimes ice cream. I do see other categories like chargers or grooming, but I avoid them."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "What prevents you from buying electronics or personal care items on Zepto?"
+      },
+      {
+        "speaker": "Karan",
+        "text": "Two things: quality trust and return hassle. If I buy a charging cable on Amazon and it breaks, I click return and they pick it up. On Zepto, the support is just a chatbot. Consumables and gadgets are mostly marked 'non-returnable'. I don't want to waste Rs. 300 on a broken cable with no return option."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "What if Zepto offered a '1-week replacement guarantee' explicitly shown on the product card at checkout?"
+      },
+      {
+        "speaker": "Karan",
+        "text": "That would change my mind. If I see a guaranteed replacement policy for electronics or accessories, I would definitely buy it in an emergency. Otherwise, it feels too risky."
+      }
+    ],
+    "validated_insight": "Highlights 'Return/Refund Anxiety' and 'Trust in Quality'. Validates that clear policy assurances (e.g. replacement guarantees) are crucial to drive electronic and utility conversions."
+  },
+  {
+    "id": 3,
+    "name": "Dr. Shalini Sen",
+    "age": 42,
+    "profession": "Pediatrician & Mother of two",
+    "city": "Delhi",
+    "frequency": "Weekly",
+    "typical_cart": "Atta, ghee, fresh fruits, kitchen essentials, laundry detergent",
+    "persona": "The Health-Conscious Household Decision Maker",
+    "transcript": [
+      {
+        "speaker": "Interviewer",
+        "text": "Dr. Sen, as a pediatrician, what are your thoughts on Zepto's expanding categories like Baby Care and Skincare?"
+      },
+      {
+        "speaker": "Shalini",
+        "text": "I use Zepto for standard groceries, but I am extremely cautious about baby formula, diapers, or premium face serums. Quick commerce dark stores are essentially small warehouses. I worry about storage hygiene."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Could you elaborate on the hygiene concerns?"
+      },
+      {
+        "speaker": "Shalini",
+        "text": "Diaper packs and baby formula boxes can absorb moisture or dust if stored poorly. There are reports of pests in quick commerce warehouses. For food we cook, we wash it. But for a baby's bottle or diaper, it has to be pristine. I buy these from specialized stores or local pharmacies where I can see the storage conditions."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "What would reassure you to buy a baby or beauty item on Zepto?"
+      },
+      {
+        "speaker": "Shalini",
+        "text": "Maybe if they have a 'Seal of Hygiene' or show that the product is directly shipped from a certified brand distributor and packed in a sealed, tamper-proof bag. Some visual proof of clean storage and safety standard compliance would help."
+      }
+    ],
+    "validated_insight": "Validates 'Trust in Quality / Warehouse Hygiene'. Shows that safety badges, distributor certification, and tamper-proof packaging are required to overcome the hygiene barrier for sensitive categories."
+  },
+  {
+    "id": 4,
+    "name": "Ankit Verma",
+    "age": 24,
+    "profession": "College Student",
+    "city": "Pune",
+    "frequency": "2-3 times a week",
+    "typical_cart": "Maggi noodles, Red Bull, chips, bread, curd, eggs",
+    "persona": "The Budget-Conscious Student",
+    "transcript": [
+      {
+        "speaker": "Interviewer",
+        "text": "Ankit, do you ever look at home utilities or cleaning items on Zepto?"
+      },
+      {
+        "speaker": "Ankit",
+        "text": "Not really. I share an apartment with roommates. We buy laundry detergent and garbage bags in bulk from DMart once a month. Zepto is too expensive for these things. We only buy groceries or snacks here when we run out suddenly."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "So price is the main factor?"
+      },
+      {
+        "speaker": "Ankit",
+        "text": "Yes. A bottle of Vim liquid is cheaper in DMart, and they give buy-one-get-one offers. Zepto charges MRP plus delivery and handling fees. It doesn't make sense to order household utilities unless it's a literal emergency, like running out of garbage bags on cleaning day."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "If Zepto matched DMart prices or offered a bulk discount bundle on your routine items, would you switch?"
+      },
+      {
+        "speaker": "Ankit",
+        "text": "If they have combo packs that match supermarket pricing, yes, because carrying heavy detergent bottles from DMart is a pain. 10-minute delivery for heavy household items at matching prices would be awesome."
+      }
+    ],
+    "validated_insight": "Confirms 'Assortment & Price Skepticism'. Validates that price matching or bulk combos (e.g. routine grocery + utility bundles) are needed to convert value-driven customer segments."
+  },
+  {
+    "id": 5,
+    "name": "Ramesh Gupta",
+    "age": 65,
+    "profession": "Retired Banker",
+    "city": "Gurgaon",
+    "frequency": "Daily",
+    "typical_cart": "Fresh milk, paneer, brown bread, apples, tomatoes, tea bags",
+    "persona": "The Senior Citizen Adapter",
+    "transcript": [
+      {
+        "speaker": "Interviewer",
+        "text": "Mr. Gupta, how has your experience been with Zepto, and do you buy anything beyond groceries?"
+      },
+      {
+        "speaker": "Ramesh",
+        "text": "My son set it up for me. It is very useful because I cannot carry heavy bags from the market. I order milk and bread every day. Once, my kitchen tap was leaking and I saw a Teflon tape and small wrench on Zepto. I ordered it and it came in 10 minutes. I was shocked and happy."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "How did you find that tape and wrench?"
+      },
+      {
+        "speaker": "Ramesh",
+        "text": "I had to search specifically. Usually, I don't see these items in the app. I thought they only sold food items. I think they should show these items to us when we buy household items. For example, if I buy dishwashing soap, show me a scrub or kitchen sponge."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "So you prefer contextual recommendations rather than searching?"
+      },
+      {
+        "speaker": "Ramesh",
+        "text": "Yes, because I don't know what is available. If the app suggests a relevant cleaning cloth when I buy dishwashing liquid, I would buy it because it makes sense. I don't want to search the whole app."
+      }
+    ],
+    "validated_insight": "Highlights 'Lack of Awareness' and confirms that older demographics prefer 'Contextual Routine Bundles' (e.g., dishwashing liquid + scrub) rather than searching for standalone utility items."
+  }
+]

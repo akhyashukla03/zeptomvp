@@ -1,0 +1,18 @@
+# Temporary & Cache Files
+__pycache__/
+*.pyc
+*.pyo
+.tempmediaStorage/
+*.log
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment
+.env
+.venv/
+env/
+venv/

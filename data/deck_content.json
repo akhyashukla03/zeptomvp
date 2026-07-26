@@ -1,0 +1,166 @@
+[
+  {
+    "slide_number": 1,
+    "tagline": "QUICK COMMERCE GOT FASTER. CATEGORY CHOICE GOT HARDER.",
+    "step_name": "Context",
+    "title": "1. Context & Brief: Solving Category Tunnel Vision in Quick Commerce",
+    "subtitle": "Why 71.2% of habitual grocery buyers checkout in <45s without exploring high-margin non-grocery categories",
+    "brief": "Role & Scope: PM on Zepto Growth Team driving non-grocery cross-category trial.",
+    "scale_vs_collapse": [
+      "Scale Milestone: $1.2B ARR across 500+ Dark Store hubs in Tier-1 Metro markets.",
+      "Grocery Tunnel Vision: 71.2% order concentration in low-margin staples (~10% gross margin).",
+      "Category Drop-off Cliff: Non-grocery trial drops to <8.2% of MAC.",
+      "Margin Expansion Moat: Personal care & pet supplies yield 35%–50% gross margins."
+    ],
+    "the_paradox": "Routine Orders = High Speed, Zero Exploration. Users checkout in <45 seconds before looking at ad banners. Banner ads fail because users suffer from Impulse & Dark-Pattern Fatigue."
+  },
+  {
+    "slide_number": 2,
+    "tagline": "$500M SPENT ON CHECKOUT AD BANNERS. $0 SPENT ON RISK-FREE TRIAL.",
+    "step_name": "Agent's Market",
+    "title": "2. Market & Blind Spot: Where Capital Was Spent vs Where Users Get Stuck",
+    "subtitle": "Why quick-commerce ecosystems optimized 10-minute speed but left category discovery unsolved",
+    "blind_spot_solved": [
+      {"layer": "10-Minute Delivery Speed", "status": "✅ Solved by Zepto, Blinkit, Instamart"},
+      {"layer": "Dark Store Density & Stock", "status": "✅ 500+ Dark Store Hubs"},
+      {"layer": "App UI & Search Auto-Complete", "status": "✅ High speed search bar"}
+    ],
+    "blind_spot_unsolved": [
+      {"layer": "Dark Store Expiry & Hygiene Trust", "status": "❌ Nobody (20.1% friction metric)"},
+      {"layer": "Planned Buy Bulk Price-Matching", "status": "❌ Nobody (19.9% friction metric)"},
+      {"layer": "Risk-Free Product Sampling", "status": "❌ Nobody (0-CAC Unsolved Moat)"},
+      {"layer": "Return & Refund Bot Uncertainty", "status": "❌ Nobody (50% survey friction)"}
+    ],
+    "core_thesis": "Users abandon non-grocery discovery not because they lack desire, but because the financial and quality cost of a wrong/expired non-grocery buy is invisible until delivered."
+  },
+  {
+    "slide_number": 3,
+    "tagline": "THE PROBLEM ISN'T BANNER VISIBILITY. IT'S FINANCIAL & QUALITY RISK BEFORE CHECKOUT.",
+    "step_name": "Research",
+    "title": "3. AI Discovery Engine: 2,000 Social Reviews & N=22 Survey Data",
+    "subtitle": "Synthesizing 10 multi-platform channels (Play Store, App Store, Reddit, Quora, LinkedIn, ProductHunt, Trustpilot, Twitter, MouthShut)",
+    "survey_stats": [
+      {"stat": "2,000", "label": "Scraped Feedback Records (10 Platforms)"},
+      {"stat": "N=22", "label": "Live Audience Survey Responses"},
+      {"stat": "71.2%", "label": "Grocery Tunnel Vision Rate"},
+      {"stat": "35–50%", "label": "Gross Margin in Non-Grocery Items"}
+    ],
+    "quotes": [
+      "\"Quality & Expiry Fear (20.1%): Fear active acids degrade in hot dark stores. - Neha, Bangalore\"",
+      "\"Planned Buy Mismatch (19.9%): Preference for buying diapers & pet food in bulk on DMart. - Dr. Shalini, Delhi\"",
+      "\"Return Bot Anxiety (50%): Refund chatbot loops prevent buying gadgets on Zepto. - Karan, Mumbai\""
+    ],
+    "conclusion": "Users don't need intrusive checkout banner ads. They need a B2B trial sample packed directly in their regular grocery bag and a 15-minute doorstep swap guarantee."
+  },
+  {
+    "slide_number": 4,
+    "tagline": "THEY USE ZEPTO EVERY MORNING. THEY JUST CAN'T TRUST NON-GROCERY ITEMS AT CHECKOUT.",
+    "step_name": "Insights",
+    "title": "4. Behavioral Segmentation & Persona Deep-Dive (Figma UI Design)",
+    "subtitle": "Targeting the Cautious Explorer & Perfectionist Prompter cohorts with Figma UI Mockups",
+    "matrix": [
+      {"type": "Habitual Refiller (71%)", "desc": "Buys milk/bread daily, ignores all promotional banners."},
+      {"type": "Cautious Explorer (20%)", "desc": "Wants skincare/pet food but fears dark store product expiry."},
+      {"type": "Impulse Avoider (6%)", "desc": "Hates checkout dark patterns, delivery fees, and rain charges."},
+      {"type": "Routine Questor (3%)", "desc": "Converts when non-grocery buys cross-subsidize grocery savings."}
+    ],
+    "persona_1": {
+      "name": "Neha · 26 · Skincare Fan · Bangalore",
+      "jtbd": "When buying skincare, I want proof of dark-store storage temperature & batch freshness, so that I don't ruin my skin barrier.",
+      "quote": "\"If I saw a live dark-store storage temperature audit and got a free 15ml trial sample in my grocery bag, I'd switch from Nykaa immediately.\""
+    }
+  },
+  {
+    "slide_number": 5,
+    "tagline": "GROCERIES BUILD DAILY RETENTION. NON-GROCERIES BUILD PROFIT MARGINS.",
+    "step_name": "Problem Canvas",
+    "title": "5. Problem Canvas & Opportunity Sizing ($480M SOM)",
+    "subtitle": "Shifting low-margin grocery orders (~10% margin) to 35%–50% gross margin categories",
+    "tam_sam_som": {
+      "tam": "$18.0B — Total Indian Quick Commerce Market Projection by 2028.",
+      "sam": "$4.2B — Non-Grocery Quick Commerce Penetration Potential.",
+      "som": "$480M — Zepto Cross-Category Discovery Capture Opportunity."
+    },
+    "impact_table": [
+      {"lever": "B2B Free Sampling", "current": "0% trial", "with_solution": "36% trial rate", "impact": "+4.5x Category Trial Rate"},
+      {"lever": "Routine Quest Streaks", "current": "10% margin", "with_solution": "2x Points on Staples", "impact": "+68% Retention Rate"},
+      {"lever": "15-Min Rider Swap", "current": "71% return fear", "with_solution": "91% trust score", "impact": "-50% Return Anxiety"}
+    ]
+  },
+  {
+    "slide_number": 6,
+    "tagline": "THREE HORIZONS OF DISCOVERY - SAMPLE, SWAP, LOCK-IN.",
+    "step_name": "Ideation",
+    "title": "6. Ideation & RICE Prioritization Matrix",
+    "subtitle": "Starting with the B2B Sampling Flywheel, expanding to reverse logistics rider swaps",
+    "horizons": [
+      {"name": "COMPASS LOOP (MVP)", "concept": "ZEPTO DISCOVERY PASS & B2B SAMPLING", "solves": "Trial Risk & Expiry Fears", "rice": "210.0"},
+      {"name": "TRUST SHIELD (Growth)", "concept": "15-MIN DOORSTEP RIDER SWAP & SHADE MATCH", "solves": "Return & Refund Bot Anxiety", "rice": "180.0"},
+      {"name": "ROUTINE QUESTS (Vision)", "concept": "ZEPTO ROUTINE QUESTS & CATEGORY STREAKS", "solves": "Long-Term Churn & Competitor Switching", "rice": "160.0"}
+    ]
+  },
+  {
+    "slide_number": 7,
+    "tagline": "THE SOLUTION: DISCOVERY PASS, THE TRIAL LAYER FOR ZEPTO.",
+    "step_name": "MVP",
+    "title": "7. MVP Product Solution: 4-Step Discovery Loop Prototype",
+    "subtitle": "Converting habitual grocery refillers into multi-category buyers with Figma UI Mockups",
+    "steps": [
+      {"num": "1. SAMPLE", "title": "1-Click B2B Free Trial", "desc": "Subscribers claim 1 free 15ml trial sample (Cetaphil, Pedigree) riding inside regular grocery bags at Rs. 0."},
+      {"num": "2. AUDIT", "title": "Model B Storage Pass", "desc": "Surfaces live dark-store IoT temperature logs (18.2°C) & automated CCTV rack snapshots."},
+      {"num": "3. CONVERT", "title": "Rs. 100 Discovery Voucher", "desc": "Post-trial nudge unlocks Rs. 100 Discovery Voucher restricted to full-size products in new categories."},
+      {"num": "4. LOCK-IN", "title": "Category Streak Board", "desc": "5-Category Streak Board (🥛 Pantry, 🍿 Snacks, 💄 Beauty, 🐾 Pets, 🔌 Utility) unlocks 2x Grocery Points."}
+    ]
+  },
+  {
+    "slide_number": 8,
+    "tagline": "FROM A TYPED GROCERY CART TO A TRUSTED CROSS-CATEGORY ORDER. SAME APP, TWO VIEWS.",
+    "step_name": "Journey",
+    "title": "8. Technical Architecture & End-to-End System Flow",
+    "subtitle": "Behind-the-scenes logic powering sampling allocation, IoT telemetry, and loyalty points",
+    "architecture_layers": [
+      {"layer": "Layer 1 (Client UI)", "tech": "Mobile Cart UI, B2B Sampler Carousel, Streak Board, SkinMatch Viewfinder."},
+      {"layer": "Layer 2 (Decision Engine)", "tech": "Persona Recommendation Engine, Voucher Validator, 2x Points Multiplier."},
+      {"layer": "Layer 3 (Operations & IoT)", "tech": "Dark Store Temp Log API, CCTV Rack Snapshot Pipeline (AWS S3 7-day TTL)."},
+      {"layer": "Layer 4 (B2B Marketplace)", "tech": "Brand Sample Inventory Ledger (Cetaphil, Pedigree listing portal)."}
+    ]
+  },
+  {
+    "slide_number": 9,
+    "tagline": "EVERY METRIC IS TIED TO THE NORTH STAR: MONTHLY CATEGORY EXPLORATION RATE (MCER).",
+    "step_name": "Metrics",
+    "title": "9. Success Metrics & 12-Month Trajectory (MCER: 8.2% → 28.4%)",
+    "subtitle": "Targeting 3.5x expansion in cross-category monthly active customers",
+    "north_star": "Monthly Category Exploration Rate (MCER): % of MACs purchasing from 2+ categories/month.",
+    "targets": [
+      {"period": "Baseline", "val": "8.2%"},
+      {"period": "Month 3 (Pilot)", "val": "14.5%"},
+      {"period": "Month 6 (Metro)", "val": "21.0%"},
+      {"period": "Month 12 Target", "val": "28.4%"}
+    ],
+    "guardrails": [
+      "Picker SLA Floor: Dark-store picking speed must stay below 60s (CCTV adds 0s delay).",
+      "S3 Cloud Cost Ceiling: AWS S3 photo storage capped below $20/month via 7-day TTL rules.",
+      "Checkout Drop-off Cap: Sample selection interaction must not increase cart drop-off (>0.2%)."
+    ]
+  },
+  {
+    "slide_number": 10,
+    "tagline": "DISCOVERY PASS TURNS HESITATION INTO REPEATED, TRUSTED RUNS AND SCALES NEXT-TIER ARR.",
+    "step_name": "Risks + GTM",
+    "title": "10. Monetization, Phased Rollout & Risk Mitigation",
+    "subtitle": "Financial flywheel, 3-phase launch, and 4 core risk mitigations",
+    "monetization": "Zepto Discovery Pass @ Rs. 59/mo + B2B Brand Listing Fees (Brands pay Rs. 15 per distributed trial sample).",
+    "rollout": [
+      "Phase 1 (Beta): 10% Bangalore Cohort (30 days) with Cetaphil & Pedigree.",
+      "Phase 2 (Pro Rollout): All Tier-1 Metros (Mumbai, Delhi, Bangalore, Hyderabad).",
+      "Phase 3 (GA): Pan-India rollout across 500+ Dark Store hubs."
+    ],
+    "risks": [
+      {"risk": "HIGH - Dark Store Expiry Fears", "mitigation": "Model B Automated CCTV Snapshots & IoT Temp Logs ($15/mo)."},
+      {"risk": "HIGH - Return Bot Anxiety", "mitigation": "15-Minute Doorstep Rider Swap & Shade Match Shield."},
+      {"risk": "MEDIUM - Brand Supply Shortage", "mitigation": "Multi-brand fallback sampling pools."},
+      {"risk": "MEDIUM - Competitor Copying", "mitigation": "Category Streak Grocery Point Lock-In."}
+    ]
+  }
+]

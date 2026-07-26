@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zepto Cross-Category Discovery - Growth PM Portal</title>
+  <!-- Outfit & Inter Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Top Navigation Bar -->
+  <header class="app-header">
+    <div class="header-logo">
+      <div class="logo-circle">⚡</div>
+      <div class="logo-text">
+        <span class="brand-name">zepto</span>
+        <span class="portal-badge">Growth Portal</span>
+      </div>
+    </div>
+    <nav class="nav-tabs">
+      <button class="tab-btn active" id="tab-btn-engine" onclick="switchTab('engine')">
+        <span class="tab-icon">📊</span> PM Discovery Engine
+      </button>
+      <button class="tab-btn" id="tab-btn-research" onclick="switchTab('research')">
+        <span class="tab-icon">👥</span> User Research Hub
+      </button>
+      <button class="tab-btn" id="tab-btn-prototype" onclick="switchTab('prototype')">
+        <span class="tab-icon">📱</span> Zepto AI MVP
+      </button>
+      <button class="tab-btn" id="tab-btn-deck" onclick="switchTab('deck')">
+        <span class="tab-icon">🖼️</span> 10-Slide Pitch Deck
+      </button>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-accent btn-sm" onclick="startGuidedTour()" style="margin-right:8px; font-weight:700; letter-spacing:0.02em; border-radius:8px;">
+        ✨ Start Guided Tour
+      </button>
+      <button class="theme-toggle" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        <span id="theme-icon">☀️</span>
+      </button>
+      <a href="data/reviews_dataset.json" download="reviews_dataset.json" class="btn btn-secondary btn-sm" id="download-dataset-btn">
+        📥 Download JSON Data
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Portal Content -->
+  <main class="portal-main">
+
+    <!-- TAB 1: PM DISCOVERY ENGINE -->
+    <section id="tab-engine" class="tab-content active">
+      <div class="section-hero">
+        <h1>AI-Powered PM Discovery Engine</h1>
+        <p>Analyzing Play Store, App Store reviews, and Reddit threads in real-time to decode why users stick to repetitive grocery purchase habits.</p>
+      </div>
+
+      <!-- Discovery Dashboard Grid -->
+      <div class="dashboard-grid">
+        <!-- Metric Cards -->
+        <div class="metric-card" id="card-total-reviews">
+          <span class="metric-label">Scraped & Analyzed Feedback</span>
+          <span class="metric-value" id="val-total-feedback">0</span>
+          <span class="metric-subtext">Play Store, App Store & Reddit</span>
+        </div>
+        <div class="metric-card" id="card-avg-rating">
+          <span class="metric-label">Avg. Review Rating</span>
+          <span class="metric-value" id="val-avg-rating">0.0</span>
+          <span class="metric-subtext">For Play Store & App Store feeds</span>
+        </div>
+        <div class="metric-card" id="card-top-barrier">
+          <span class="metric-label">Leading Purchase Barrier</span>
+          <span class="metric-value text-accent" id="val-top-barrier">Loading...</span>
+          <span class="metric-subtext" id="val-top-barrier-percentage">0% of total friction</span>
+        </div>
+        <div class="metric-card" id="card-new-cat-potential">
+          <span class="metric-label">Skincare & Pets conversion potential</span>
+          <span class="metric-value text-success" id="val-conversion-potential">High</span>
+          <span class="metric-subtext">Based on contextual affinity</span>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="chart-container span-md-2" id="chart-barriers-container">
+          <h3 class="chart-title">🚫 Frequency Barriers & Friction Distribution</h3>
+          <div class="chart-bars-list" id="barriers-chart-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="chart-container" id="chart-sentiment-container">
+          <h3 class="chart-title">🎭 Sentiment Split</h3>
+          <div class="sentiment-donut-wrap">
+            <div class="sentiment-donut" id="sentiment-pie"></div>
+            <div class="sentiment-labels" id="sentiment-labels-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-container" id="chart-categories-container">
+          <h3 class="chart-title">🏷️ Categories Highlighted in Feedback</h3>
+          <div class="categories-bubbles" id="categories-bubble-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- METHODOLOGY & PIPELINE VISUALIZER -->
+        <div class="span-full discovery-methodology-box">
+          <h3 class="chart-title">⚙️ Discovery Engine Methodology & Data Pipeline Workflow</h3>
+          <div class="methodology-steps-grid">
+            <div class="method-step-card">
+              <span class="step-num">STEP 1</span>
+              <h4>Multi-Channel Ingestion</h4>
+              <p>Gathers App Store RSS, Play Store API, Reddit (r/india, r/bangalore), and public forums into a unified feedback stream.</p>
+            </div>
+            <div class="method-step-card">
+              <span class="step-num">STEP 2</span>
+              <h4>NLP Theme Tagging</h4>
+              <p>Filters out ~67% operational noise (refunds, delivery delays) and tags remaining feedback into 5 core category barriers.</p>
+            </div>
+            <div class="method-step-card">
+              <span class="step-num">STEP 3</span>
+              <h4>Insight Synthesis</h4>
+              <p>Maps cross-category purchase correlations, identifying planned vs. emergency mismatches and dark-store quality fears.</p>
+            </div>
+            <div class="method-step-card">
+              <span class="step-num">STEP 4</span>
+              <h4>Quality Validation</h4>
+              <p>Cross-references review clusters against 5 metro user interview transcripts to score hypothesis accuracy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 CORE STRATEGIC QUESTIONS MATRIX -->
+        <div class="span-full strategic-questions-box">
+          <h3 class="chart-title">🧠 Deep Behavioral Analysis: 8 Core PM Questions Answered (2,000 Records & Live N=7 Survey Data)</h3>
+          <div class="questions-accordion-grid" id="pm-questions-grid">
+            <!-- 8 Question Cards -->
+            <div class="pm-question-card">
+              <div class="pm-q-header">1. Why do users repeatedly buy from the same categories?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> 71.2% of 2,000 reviews (1,423 records) are locked in daily Groceries (milk, eggs). Users treat Zepto as a 30-second "digital pantry" repeat refill tool, searching for specific items and bypassing non-grocery categories entirely.
+                <div class="pm-q-action">🎯 PM Action: Intercept checkout path with context-aware routine suggestions rather than static homepage ads.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">2. What prevents users from exploring new categories?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> 667 non-grocery friction records (33.4% of dataset) broke down into 5 key psychological barriers: Dark Store Quality/Expiry Fears (20.1%), Checkout Dark-Pattern Fatigue (20.1%), Planned vs. Emergency Mismatch (19.9%), Ecological Packaging Guilt (19.9%), and Unawareness (19.9%). 71% of live survey respondents cited Return/Refund Anxiety as their top objection.
+                <div class="pm-q-action">🎯 PM Action: Offer B2B sponsored sample trials riding in routine grocery bags to eliminate financial &amp; eco risk.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">3. How do users discover products today?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> 134 records (20.1% of category frictions) confirm severe "Checkout Impulse Fatigue" and homepage banner blindness. In our live audience survey, 57% chose free trial samples inside grocery bags as their #1 discovery channel over ad banners or 20% discount pop-ups.
+                <div class="pm-q-action">🎯 PM Action: Embed discovery triggers inside the active shopping cart drawer rather than static homepage sliders.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">4. What role do habits play in shopping behavior?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> High-frequency grocery buyers (4+ orders/week) account for 43% of live cohort respondents. 86% of live respondents explicitly agreed that earning bigger discounts on daily essentials (Milk/Bread) by completing monthly category streaks would motivate them to buy non-groceries on Zepto.
+                <div class="pm-q-action">🎯 PM Action: Create category streak boards (Zepto Routine Quests) that reward routine grocery buyers with 2x grocery points.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">5. What info do users need before trying a new category?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> 134 quality fear records (20.1%) demand explicit Dark Store warehouse hygiene seals, transparent expiry dates, and distributor authenticity. 100% of live survey respondents rated a 15-minute rider doorstep replacement &amp; shade refund guarantee at 3.0 or higher (Average 4.1 / 5.0 rating).
+                <div class="pm-q-action">🎯 PM Action: Inject product-level trust shields (15-Min Doorstep Swap &amp; Shade Refund) directly onto recommendation cards in the cart.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">6. What frustrations emerge repeatedly?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> 1,333 records (66.6% of 2,000) represent operational noise (refund bot loops, missing items, rain/handling charges). 71% of live survey respondents report refund bot anxiety when ordering non-returnables (cosmetics, electronics).
+                <div class="pm-q-action">🎯 PM Action: Isolate operational support tickets from growth signals and offer Rs. 100 Discovery Vouchers for new trials.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">7. Which user segments are more likely to experiment?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> 2,000 reviews cross-analyzed across 10 platforms show Pet Supplies (6.7%) and Beauty &amp; Grooming (5.5%) are the highest trial-intent non-grocery categories among WFH professionals and Pet Parent personas. Daily/alternate day users (43% of cohort) show highest intent to claim B2B free samples inside daily grocery bags.
+                <div class="pm-q-action">🎯 PM Action: Target initial Discovery Pass rollouts to high-frequency WFH and late-night grocery buyer cohorts.</div>
+              </div>
+            </div>
+
+            <div class="pm-question-card">
+              <div class="pm-q-header">8. What unmet needs emerge consistently across discussions?</div>
+              <div class="pm-q-body">
+                <strong>Dataset Proof:</strong> Zero-risk trial sizes (B2B sponsored samples), eco-consolidated shipping, and cross-category loyalty rewards that reduce daily grocery bills. 57% voted B2B sampling as #1 trial incentive; 86% voted category streak grocery points as #1 loyalty reward.
+                <div class="pm-q-action">🎯 PM Action: Launch the B2B2C Zepto Discovery Pass and Category Streak Point Board.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback Data Viewer Section -->
+        <div class="data-table-container span-full">
+          <div class="table-header-filters">
+            <h3>Real-Time Customer Review Database</h3>
+            <div class="filter-controls">
+              <select id="filter-source" onchange="applyFilters()">
+                <option value="all">All Sources (10 Platforms)</option>
+                <option value="Play Store">Play Store</option>
+                <option value="App Store">App Store</option>
+                <option value="Reddit">Reddit</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Quora">Quora</option>
+                <option value="MouthShut">MouthShut</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="ProductHunt">ProductHunt</option>
+                <option value="Trustpilot">Trustpilot</option>
+              </select>
+              <select id="filter-barrier" onchange="applyFilters()">
+                <option value="all">All Friction Barriers</option>
+                <option value="Operational & Delivery Issues">Operational & Delivery Issues</option>
+                <option value="Planned vs. Emergency Mismatch">Planned vs. Emergency Mismatch</option>
+                <option value="Trust in Quality">Trust in Quality</option>
+                <option value="Checkout Impulse Fatigue">Checkout Impulse Fatigue</option>
+                <option value="Ecological Guilt">Ecological Guilt</option>
+                <option value="Lack of Awareness">Lack of Awareness</option>
+              </select>
+              <select id="filter-sentiment" onchange="applyFilters()">
+                <option value="all">All Sentiments</option>
+                <option value="Positive">Positive</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Negative">Negative</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-scroll-wrapper">
+            <table class="data-table" id="feedback-table">
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Username</th>
+                  <th>Rating</th>
+                  <th>Category</th>
+                  <th>Friction Barrier</th>
+                  <th>Review Snippet</th>
+                  <th>Sentiment</th>
+                </tr>
+              </thead>
+              <tbody id="feedback-table-body">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TAB 2: USER RESEARCH HUB -->
+    <section id="tab-research" class="tab-content">
+      <div class="section-hero">
+        <h1>User Research & Validation Center</h1>
+        <p>Deep-diving into 5 primary user interviews to validate the insights found by the AI engine. How does actual conversation match store reviews?</p>
+      </div>
+
+      <div class="research-grid">
+        <!-- Interview Selector and Details -->
+        <div class="interviews-panel">
+          <h3>👥 Selected Interviewees (5 Metros)</h3>
+          <div class="interviewee-list" id="interviewee-nav">
+            <!-- Dynamically populated cards -->
+          </div>
+        </div>
+
+        <div class="transcript-panel">
+          <div class="transcript-header" id="transcript-meta-header">
+            <h3>Select a respondent to view interview transcript...</h3>
+          </div>
+          <div class="transcript-body" id="transcript-messages-body">
+            <!-- Dynamically populated conversations -->
+          </div>
+        </div>
+
+        <!-- Validation Scorecard -->
+        <div class="validation-scorecard-container span-full">
+          <div class="card-header-badge">
+            <h3>🔬 Discovery Validation Scorecard</h3>
+            <span class="badge badge-accent">AI Insights vs. Primary Research</span>
+          </div>
+          <p class="scorecard-intro-text">
+            Below we chart how our 5 customer interviews either <strong>validated</strong> or <strong>challenged</strong> the automated assumptions made by the AI Discovery Engine.
+          </p>
+          <div class="scorecard-grid">
+            <div class="scorecard-item">
+              <div class="scorecard-status status-valid">Validated</div>
+              <h4>Cognitive Lock-In & Homepage blindness</h4>
+              <p class="scorecard-desc">Users confirm they search and buy within 30 seconds, bypassing homepage banners entirely. Homepage advertising is ineffective for recurring habits.</p>
+              <div class="scorecard-evidence"><strong>Evidence:</strong> Pooja (Blr) and Ramesh (Ggn) check out in under 3 clicks and fail to see non-grocery items.</div>
+            </div>
+            <div class="scorecard-item">
+              <div class="scorecard-status status-valid">Validated</div>
+              <h4>Warehouse Quality/Hygiene Fears</h4>
+              <p class="scorecard-desc">Sensitive categories (Baby Care, Premium Skincare) suffer from lack of trust in quick-commerce storage environments.</p>
+              <div class="scorecard-evidence"><strong>Evidence:</strong> Dr. Shalini (Del) refuses to buy baby formula due to warehouse dust/pest concerns.</div>
+            </div>
+            <div class="scorecard-item">
+              <div class="scorecard-status status-valid">Validated</div>
+              <h4>Electronics Return Policy Anxiety</h4>
+              <p class="scorecard-desc">Friction in returning broken accessories or charging cords prevents emergency gadget adoption.</p>
+              <div class="scorecard-evidence"><strong>Evidence:</strong> Karan (Mum) buys electronics exclusively from Amazon due to ease of return/refund support.</p></div>
+            </div>
+            <div class="scorecard-item">
+              <div class="scorecard-status status-challenge">Challenged</div>
+              <h4>Household Utilities are Emergency-Only</h4>
+              <p class="scorecard-desc">AI engine assumed users just lacked awareness. Primary research showed they actively buy elsewhere due to bulk price differences (e.g. DMart).</p>
+              <div class="scorecard-evidence"><strong>Evidence:</strong> Ankit (Pune) orders household cleaning from DMart due to bulk packaging discounts.</p></div>
+            </div>
+        </div>
+
+        <!-- Live Audience Survey Results Scorecard -->
+        <div class="span-full google-form-generator-card" style="border-color: var(--color-zepto-yellow); margin-bottom: 24px;">
+          <div class="card-header-badge">
+            <h3>📊 Live Audience Survey Results & AI MVP Plan Confirmation (N=22 Expanded Responses)</h3>
+            <span class="badge badge-pos" style="background: rgba(39, 201, 63, 0.2); color: #27c93f;">100% Plan Confirmed</span>
+          </div>
+          <p class="form-card-intro">
+            Live audience data parsed from your expanded survey spreadsheet (<code>Stealth QC Survey Responses (Spreadsheet) (1).xlsx</code>). The empirical findings directly validate the core pillars of our Zepto Growth Strategy:
+          </p>
+
+          <div class="scorecard-grid">
+            <div class="scorecard-item" style="border: 1px solid rgba(255, 179, 0, 0.3);">
+              <div class="scorecard-status status-valid" style="background: var(--color-zepto-yellow); color: #000;">82% Power Users</div>
+              <h4>Habitual Routine User Concentration</h4>
+              <p class="scorecard-desc"><strong>82% of live respondents (18/22)</strong> order quick commerce 1–4+ times per week, confirming our target audience is locked into high-frequency daily routines.</p>
+              <div class="scorecard-evidence"><strong>Outcome:</strong> Reconfirms habitual routine user personas.</div>
+            </div>
+
+            <div class="scorecard-item" style="border: 1px solid rgba(39, 201, 63, 0.3);">
+              <div class="scorecard-status status-valid">68% Landslide</div>
+              <h4>Grocery Points Cross-Subsidy Win</h4>
+              <p class="scorecard-desc"><strong>68% of respondents (15/22)</strong> preferred earning bigger discounts on daily essentials (Milk/Bread) by completing monthly category streaks over cashbacks or delivery coupons.</p>
+              <div class="scorecard-evidence"><strong>Outcome:</strong> Validates <em>Zepto Routine Quests (Category Streak Points)</em>.</div>
+            </div>
+
+            <div class="scorecard-item" style="border: 1px solid rgba(255, 95, 86, 0.3);">
+              <div class="scorecard-status status-valid" style="background: var(--color-danger); color: #fff;">50% Friction #1</div>
+              <h4>Return/Refund Anxiety is Top Objection</h4>
+              <p class="scorecard-desc"><strong>50% of respondents (11/22)</strong> cited Return/Refund uncertainty as their #1 barrier. <strong>91% (20/22)</strong> rated 15-min doorstep swap guarantees at 3.0 to 5.0.</p>
+              <div class="scorecard-evidence"><strong>Outcome:</strong> Validates <em>Zepto Trust Shield (15-Min Doorstep Swap & Refund)</em>.</div>
+            </div>
+
+            <div class="scorecard-item" style="border: 1px solid rgba(130, 36, 227, 0.3);">
+              <div class="scorecard-status status-valid" style="background: var(--color-zepto-purple); color: #fff;">36% + 36%</div>
+              <h4>Sampling & Verified Review Discovery</h4>
+              <p class="scorecard-desc">Free Trial Samples (36%) and Verified Review Ratings (36%) emerged as the top conversion triggers for trying new non-grocery categories.</p>
+              <div class="scorecard-evidence"><strong>Outcome:</strong> Validates <em>Zepto Discovery Pass B2B Sampling</em>.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary Research Survey & Google Form Generator Card -->
+        <div class="span-full google-form-generator-card">
+          <div class="card-header-badge">
+            <h3>📋 Primary Research: Questionnaire & 1-Click Google Form Generator</h3>
+            <span class="badge badge-accent">Google Apps Script Ready</span>
+          </div>
+          <p class="form-card-intro">
+            We have designed an automated Google Apps Script that builds your complete Primary Research Survey in Google Forms with 1 click.
+          </p>
+
+          <div class="form-survey-preview-grid">
+            <div class="survey-info-panel">
+              <h4>📝 Survey Structure & Question Breakdown</h4>
+              <ul class="survey-q-list">
+                <li><strong>Section 1: Habits & Baseline</strong> (Frequency, Categories bought, Primary non-grocery channels)</li>
+                <li><strong>Section 2: Perceived Friction</strong> (Planned vs Emergency, Quality fears, Ecological guilt, Checkout fatigue)</li>
+                <li><strong>Section 3: Concept Validation</strong> (Discovery Pass Sampling, Zepto Routine Quests, 15-Min Replacement, Rs. 100 Voucher)</li>
+                <li><strong>Section 4: Priority Ranking</strong> (Matrix ranking 4 proposed enhancements by user value)</li>
+              </ul>
+            </div>
+
+            <div class="script-copy-panel">
+              <h4>⚡ How to Generate in Your Google Drive:</h4>
+              <ol class="script-steps-list">
+                <li>Open <a href="https://script.google.com" target="_blank" style="color:var(--color-zepto-yellow);">script.google.com</a> (or Google Drive → New → Google Apps Script).</li>
+                <li>Copy the script below and paste it into the editor.</li>
+                <li>Click <strong>Run</strong> at the top toolbar and grant permissions.</li>
+                <li>Your Google Form link will be output in the execution log instantly!</li>
+              </ol>
+              <div class="script-code-box">
+                <button class="btn-copy-code" onclick="copyGoogleFormScript()">📋 Copy Script</button>
+                <pre><code id="code-google-script">// Google Apps Script Form Generator
+function createZeptoPrimaryResearchForm() {
+  var form = FormApp.create("Zepto Quick-Commerce Shopping Habits Survey");
+  form.setDescription("Primary Research survey for Zepto quick-commerce users.");
+  
+  // Section 1: Usage & Categories
+  var q1 = form.addMultipleChoiceItem();
+  q1.setTitle("1. How frequently do you use quick-commerce apps (Zepto, Blinkit)?")
+    .setChoices(["Daily/Alternate days", "1-2 times/week", "2-3 times/month", "Rarely"]);
+    
+  var q2 = form.addCheckboxItem();
+  q2.setTitle("2. Which categories do you CURRENTLY buy on quick-commerce apps?")
+    .setChoices(["Groceries", "Fruits & Veggies", "Snacks", "Beauty/Grooming", "Pet Supplies", "Electronics", "Baby Care", "Household Essentials"]);
+
+  // Section 2: Friction Points
+  var q4 = form.addCheckboxItem();
+  q4.setTitle("4. What prevents you from buying non-groceries on Zepto?")
+    .setChoices(["Planned vs Emergency Mismatch", "Dark Store Quality Fear", "Ecological Guilt", "Checkout Fatigue", "Return/Refund Anxiety"]);
+
+  // Section 3: Feature Concepts
+  var q5 = form.addScaleItem();
+  q5.setTitle("5. Free B2B Brand Trial Sample in Grocery Bag: How likely are you to try?")
+    .setBounds(1, 5).setLabels("1 - Unlikely", "5 - Extremely Likely");
+
+  var q6 = form.addMultipleChoiceItem();
+  q6.setTitle("6. Category Streak Board (2x Grocery Points): Would you buy non-groceries?")
+    .setChoices(["Yes! Cheaper groceries!", "Maybe, if price is competitive", "No"]);
+    
+  Logger.log("Form URL: " + form.getPublishedUrl());
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TAB 3: ZEPTO AI MVP PROTOTYPE -->
+    <section id="tab-prototype" class="tab-content">
+      <div class="section-hero">
+        <h1>Zepto AI-Powered MVP: "Routine Companion"</h1>
+        <p>Simulating the customer experience on a mobile interface. Witness how the AI-powered Widget nudges a habitual grocery buyer into cross-category adoption during the checkout flow.</p>
+      </div>
+
+      <div class="prototype-showcase">
+        <!-- Interactive Controls Side -->
+        <div class="prototype-control-panel">
+          <h3>⚙️ Simulator Setup</h3>
+          <p>Configure the customer's shopping cart and profile to see how the AI recommendation engine adapts dynamically.</p>
+          
+          <div class="control-group">
+            <label class="control-label">Select Customer Persona:</label>
+            <div class="radio-pill-group">
+              <button class="pill-btn active" id="persona-pet" onclick="setPersona('pet')">🐈 Pooja (Pet Owner)</button>
+              <button class="pill-btn" id="persona-beauty" onclick="setPersona('beauty')">💄 Neha (Skincare Fan)</button>
+              <button class="pill-btn" id="persona-electronics" onclick="setPersona('electronics')">🔌 Karan (WFH Gadgets)</button>
+              <button class="pill-btn" id="persona-household" onclick="setPersona('household')">🧹 Ramesh (Home Utility)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Current Cart Items (Habitual Staples):</label>
+            <div class="cart-items-picker" id="cart-toggles-list">
+              <!-- Dynamically populated toggles -->
+            </div>
+          </div>
+
+          <div class="pm-rules-sheet">
+            <h4>💡 Under-the-Hood: Growth PM Logic & Cohort Validation</h4>
+            <ul>
+              <li><strong>B2B Free Sampling (57% Live Choice):</strong> 57% of live survey respondents chose free trial samples in grocery bags as their #1 trial incentive over discounts.</li>
+              <li><strong>Category Streak Cross-Subsidy (86% Live Choice):</strong> 86% of respondents preferred earning grocery points on daily milk/bread by completing category streaks over flat cashbacks.</li>
+              <li><strong>15-Min Doorstep Trust Shield (71% Friction Fix):</strong> Solves the #1 objection (return anxiety) with instant rider doorstep replacement & shade-match refund guarantees.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phone Frame Side -->
+        <div class="phone-frame-wrapper">
+          <div class="iphone-mockup">
+            <div class="iphone-notch"></div>
+            <div class="iphone-screen">
+              
+              <!-- Zepto Simulated App Header -->
+              <div class="sim-header">
+                <div class="sim-delivery-eta">
+                  <span class="eta-title">Delivery in 10 Mins</span>
+                  <span class="eta-address">Home - Sector 56, Gurgaon 📍</span>
+                </div>
+                <div class="sim-search-bar">
+                  <span>Search "organic milk, curd..."</span>
+                  <span class="search-icon">🔍</span>
+                </div>
+              </div>
+
+              <!-- Zepto Simulated App Content Area -->
+              <div class="sim-content" id="phone-screen-content">
+                
+                <!-- STATE 1: SHOPPING CART SCREEN -->
+                <div id="sim-screen-cart" class="sim-screen active">
+                  <div class="sim-screen-title">
+                    <span>Your Shopping Cart 🛒</span>
+                    <button class="btn-clear-cart" onclick="resetSimCart()">Clear</button>
+                  </div>
+                  
+                  <div class="discovery-pass-badge">💎 Zepto Discovery Pass Active <span style="font-size:9px; opacity:0.9; margin-left:4px;">(✓ 57% Cohort Choice)</span></div>
+
+                  <div class="sim-cart-list" id="sim-cart-items-list">
+                    <!-- Dynamically populated items -->
+                  </div>
+
+                  <!-- Zepto Discovery Pass Sampling Panel -->
+                  <div id="sim-subscription-sampler">
+                    <!-- Populated dynamically via JS -->
+                  </div>
+
+                  <!-- Zepto Routine Quest Sticker Board -->
+                  <div id="sim-quest-board">
+                    <!-- Populated dynamically via JS -->
+                  </div>
+
+                  <!-- AI Co-Pilot Activation Widget -->
+                  <div id="sim-copilot-trigger-area">
+                    <!-- Populated dynamically via JS based on chosen persona -->
+                  </div>
+
+                  <div class="bill-details-card">
+                    <h4>Bill Details</h4>
+                    <div class="bill-row">
+                      <span>Items Total</span>
+                      <span id="bill-subtotal">Rs. 0</span>
+                    </div>
+                    <div class="bill-row">
+                      <span>Delivery Partner Fee</span>
+                      <span class="text-success">FREE</span>
+                    </div>
+                    <div class="bill-row">
+                      <span>Handling Charges</span>
+                      <span>Rs. 9</span>
+                    </div>
+                    <hr>
+                    <div class="bill-row bill-total">
+                      <span>To Pay</span>
+                      <span id="bill-grand-total">Rs. 0</span>
+                    </div>
+                  </div>
+
+                  <!-- Checkout Action Button -->
+                  <div class="cart-bottom-actions">
+                    <button class="btn-checkout-proceed" onclick="triggerCheckoutNudge()">
+                      <span>Proceed to Payment</span>
+                      <span id="checkout-btn-price">Rs. 0 →</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- STATE 2: SUCCESS DELIVERED SCREEN -->
+                <div id="sim-screen-success" class="sim-screen">
+                  <div class="success-icon-wrap">
+                    <div class="success-checkmark">✓</div>
+                  </div>
+                  <h3>Order Placed Successfully!</h3>
+                  <p class="success-order-id">Order ID: ZP-28947629-26</p>
+                  
+                  <div class="delivery-map-sim">
+                    <div class="map-rider">🚴</div>
+                    <div class="map-path"></div>
+                    <div class="map-destination">🏡</div>
+                  </div>
+
+                  <p class="success-eta-countdown">Rider is at Dark Store. Arriving in <strong>9 mins 42 secs</strong></p>
+
+                  <div class="order-summary-box">
+                    <h4>Items Ordered:</h4>
+                    <div id="success-items-list"></div>
+                  </div>
+
+                  <button class="btn btn-primary btn-block" onclick="resetPrototypeToCart()">Shop Again</button>
+                </div>
+
+                <!-- STATE 3: SIMULATED CAMERA VIEW (FOR SKINMATCH AI) -->
+                <div id="sim-screen-camera" class="sim-screen">
+                  <div class="camera-header">
+                    <span>SkinMatch AI Selfie Scanner</span>
+                    <button class="btn-close-camera" onclick="cancelCameraScan()">✕</button>
+                  </div>
+                  <div class="camera-viewfinder">
+                    <div class="face-guideline-silhouette">👤</div>
+                    <div class="scanning-radar-line"></div>
+                    <div class="scanning-pulsar-circle"></div>
+                    <div class="camera-status-text" id="camera-status-label">Align face to detect skin undertones...</div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- OVERLAY MODAL: THE AI ROUTINE COMPANION NUDGE -->
+              <div class="ai-nudge-overlay" id="ai-nudge-modal">
+                <div class="ai-nudge-sheet">
+                  <div class="nudge-pull-bar"></div>
+                  <div class="nudge-header">
+                    <div class="nudge-badge-wrap">
+                      <span class="sparkle-icon">✨</span>
+                      <span>Zepto AI Routine Companion</span>
+                    </div>
+                    <button class="btn-close-nudge" onclick="closeNudgeOverlay()">✕</button>
+                  </div>
+                  <div class="nudge-body">
+                    <p class="nudge-intro-text" id="nudge-text-intro">
+                      We noticed you are ordering breakfast essentials. Do you have a pet at home?
+                    </p>
+                    
+                    <div class="recommended-product-card">
+                      <div class="prod-badge-discount" id="nudge-prod-discount">30% OFF</div>
+                      <div class="prod-flex">
+                        <div class="prod-image-sim" id="nudge-prod-img">🍖</div>
+                        <div class="prod-details">
+                          <h4 id="nudge-prod-name">Temptations Cat Treats (Chicken)</h4>
+                          <span class="prod-qty" id="nudge-prod-qty">85g Pack</span>
+                          <div class="prod-price-row">
+                            <span class="price-current" id="nudge-prod-price-cur">Rs. 140</span>
+                            <span class="price-mrp" id="nudge-prod-price-mrp">Rs. 200</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Reassurance Badges solving core barriers -->
+                      <div class="prod-reassurance-badges">
+                        <div class="badge-item-re" onclick="openDarkStoreAudit()" style="cursor:pointer; background:rgba(255,179,0,0.15); border:1px solid rgba(255,179,0,0.4);">
+                          <span class="badge-re-icon">🛡️</span>
+                          <span class="badge-re-text" id="nudge-badge-trust">View Storage Audit Log ➔</span>
+                        </div>
+                        <div class="badge-item-re">
+                          <span class="badge-re-icon">🔄</span>
+                          <span class="badge-re-text" id="nudge-badge-return">7-Day Free Replacement</span>
+                        </div>
+                      </div>
+
+                      <button class="btn-add-nudge" onclick="acceptNudgeProduct()">
+                        <span>Add & Proceed to Pay</span>
+                        <span id="nudge-add-price">+ Rs. 140</span>
+                      </button>
+                    </div>
+
+                    <button class="btn-decline-nudge" onclick="declineNudgeProduct()">
+                      No thanks, checkout directly
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- OVERLAY MODAL: DARK-STORE LIVE AUDIT PASS -->
+              <div class="ai-nudge-overlay" id="dark-store-audit-modal">
+                <div class="ai-nudge-sheet" style="background:#12121a; border-top:2px solid var(--color-zepto-yellow);">
+                  <div class="nudge-pull-bar"></div>
+                  <div class="nudge-header">
+                    <div class="nudge-badge-wrap">
+                      <span class="sparkle-icon">🛡️</span>
+                      <span style="color:var(--color-zepto-yellow); font-weight:700;">Dark-Store Quality & Hygiene Pass</span>
+                    </div>
+                    <button class="btn-close-nudge" onclick="closeDarkStoreAudit()">✕</button>
+                  </div>
+                  <div class="nudge-body" style="padding:16px;">
+                    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:12px; font-size:11px; color:#fff;">
+                      <div style="display:flex; justify-content:space-between; margin-bottom:8px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:6px;">
+                        <span>🏢 <strong>Dark Store Hub:</strong></span>
+                        <span id="audit-hub-name" style="color:var(--color-zepto-yellow);">Gurgaon Sec 56 (Vault #3)</span>
+                      </div>
+                      <div style="display:flex; justify-content:space-between; margin-bottom:8px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:6px;">
+                        <span>🌡️ <strong>Storage Temperature:</strong></span>
+                        <span id="audit-temp" style="color:var(--color-success); font-weight:700;">18.2°C (IoT Monitored)</span>
+                      </div>
+                      <div style="display:flex; justify-content:space-between; margin-bottom:8px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:6px;">
+                        <span>🧼 <strong>Hygiene Rating:</strong></span>
+                        <span id="audit-hygiene" style="color:#27c93f;">Grade A+ (Daily Audit)</span>
+                      </div>
+                      <div style="display:flex; justify-content:space-between; margin-bottom:8px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:6px;">
+                        <span>📅 <strong>Batch Expiry:</strong></span>
+                        <span id="audit-expiry">Nov 2027 (36 Mos Shelf Life)</span>
+                      </div>
+                      <div style="display:flex; justify-content:space-between;">
+                        <span>🔒 <strong>Packaging Seal:</strong></span>
+                        <span style="color:var(--color-zepto-purple);">Anti-Contamination Pouch</span>
+                      </div>
+                    </div>
+
+                    <!-- Model B: Rack-Level Automated Vault Snapshot -->
+                    <div style="margin-top:12px; background:rgba(0,0,0,0.4); border:1px solid rgba(255,179,0,0.3); border-radius:10px; padding:10px;">
+                      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                        <span style="font-size:10px; color:var(--color-zepto-yellow); font-weight:700;">📸 Automated Vault Rack Snapshot (CCTV-CAM-04)</span>
+                        <span style="font-size:9px; color:var(--text-muted);">Timestamp: Today, 14:00 IST</span>
+                      </div>
+                      <div style="position:relative; background:#08080c; border-radius:6px; height:80px; display:flex; align-items:center; justify-content:center; overflow:hidden; border:1px dashed rgba(255,255,255,0.15);">
+                        <div style="text-align:center; font-size:10px; color:#a9b7c6;">
+                          <div style="font-size:18px; margin-bottom:2px;">🏬 🧴 🍖 🔌</div>
+                          <span>Temperature Controlled Vault #3 Shelf (18.2°C)</span>
+                        </div>
+                        <span style="position:absolute; bottom:4px; right:6px; font-size:8px; background:rgba(39,201,63,0.2); color:#27c93f; padding:2px 4px; border-radius:3px;">LIVE CAM OK</span>
+                      </div>
+                      <div style="margin-top:6px; font-size:9px; color:var(--text-muted); line-height:1.3;">
+                        💡 <strong>PM Feasibility Note:</strong> Model B uses automated overhead rack cameras (1 snapshot / 2 hrs). Zero picker delay &amp; AWS S3 cloud cost capped at ~$15/month for all of India.
+                      </div>
+                    </div>
+
+                    <button class="btn-decline-nudge" onclick="closeDarkStoreAudit()" style="margin-top:14px; background:var(--color-zepto-purple); color:#fff; cursor:pointer;">
+                      ✓ Understood (Return to Item)
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TAB 4: 10-SLIDE PITCH DECK -->
+    <section id="tab-deck" class="tab-content">
+      <div class="section-hero">
+        <h1>10-Slide Product Manager Pitch Deck</h1>
+        <p>Interactive PM Pitch Deck structured specifically for the graduation project submission guidelines. Each slide title communicates a clear, action-oriented message.</p>
+      </div>
+
+      <div class="deck-viewer-container">
+        <!-- Deck Navigation Header -->
+        <div class="deck-nav-bar">
+          <div class="deck-controls">
+            <button class="btn btn-secondary btn-sm" onclick="changeSlide(-1)">◀ Previous</button>
+            <span class="slide-indicator">Slide <strong id="current-slide-num">1</strong> of 10</span>
+            <button class="btn btn-secondary btn-sm" onclick="changeSlide(1)">Next ▶</button>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="Zepto_Growth_PM_Graduation_Project.pdf" download="Zepto_Growth_PM_Graduation_Project.pdf" class="btn btn-accent btn-sm" style="background:linear-gradient(135deg, #e05238, #ff5252); text-decoration:none; font-weight:700;">
+              📄 Download PDF Deck
+            </a>
+            <a href="Zepto_Growth_PM_Graduation_Project.pptx" download="Zepto_Growth_PM_Graduation_Project.pptx" class="btn btn-secondary btn-sm" style="text-decoration:none; font-weight:700;">
+              📊 Download PPTX Deck
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide Frame Representing standard format -->
+        <div class="slide-canvas-wrapper">
+          <div class="slide-canvas" id="slide-canvas-box">
+            <!-- Dynamically populated via JS -->
+            <div class="slide-layout-content">
+              <span class="slide-header-number">SLIDE 01</span>
+              <h2 class="slide-main-title" id="slide-title">Slide Title goes here</h2>
+              <h3 class="slide-sub-title" id="slide-subtitle">Subtitle goes here</h3>
+              <ul class="slide-bullets-list" id="slide-bullets">
+                <!-- Bullet points go here -->
+              </ul>
+            </div>
+            <div class="slide-footer">
+              <span>Zepto Growth Team | Q3 Strategic Plan</span>
+              <span class="slide-strict-font-notice">Min. Font Size: 14pt (Google Slides) | Strict 10 Slide Limit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Thumbnails list -->
+        <div class="slide-thumbnails-strip" id="slide-thumbnails-list">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-wrap">
+      <p>© 2026 Zepto Growth PM graduation project. All code and visual mockups are interactive prototypes.</p>
+      <p>Created as an AI-powered end-to-end PM Discovery Engine and MVP solution.</p>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC GUIDED PM TOUR OVERLAY -->
+  <div id="guided-tour-overlay" style="display:none; position:fixed; bottom:24px; right:24px; z-index:999999; max-width:380px; background:rgba(18, 13, 30, 0.95); border:2px solid var(--color-zepto-purple); border-radius:16px; box-shadow:var(--shadow-phone); padding:20px; font-family:var(--font-main); color:#fff; backdrop-filter:blur(20px);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
+      <span style="font-weight:700; color:var(--color-zepto-yellow); font-size:13px; font-family:var(--font-display);">✨ Interactive Guided PM Tour</span>
+      <button onclick="endGuidedTour()" style="background:none; border:none; color:#fff; cursor:pointer; font-size:14px; font-weight:700;">✕</button>
+    </div>
+    <div id="tour-step-content" style="font-size:11px; line-height:1.5; color:#e2d9f3; margin-bottom:16px; min-height:60px;">
+      <!-- Dynamic tour step content -->
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span id="tour-step-indicator" style="font-size:9px; color:var(--text-muted);">Step 1 of 6</span>
+      <div style="display:flex; gap:8px;">
+        <button id="tour-prev-btn" onclick="prevTourStep()" style="font-size:10px; padding:6px 12px; background:rgba(255,255,255,0.05); color:#fff; border:1px solid rgba(255,255,255,0.1); border-radius:6px; cursor:pointer;">Back</button>
+        <button id="tour-next-btn" onclick="nextTourStep()" style="font-size:10px; padding:6px 12px; background:var(--color-zepto-purple); color:#fff; border:none; border-radius:6px; cursor:pointer; font-weight:700; box-shadow:0 2px 10px rgba(130,36,227,0.4);">Next ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
