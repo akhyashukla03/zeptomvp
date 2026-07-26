@@ -115,11 +115,21 @@ Open **`http://localhost:8080`** in your browser to test the interactive portal!
 
 ---
 
-## 🚀 Live Production Deployment
+## 🚀 Streamlit Cloud & Live Production Deployment
 
-Since the portal is built using **HTML5, Vanilla CSS3, and Modular JavaScript**, it is **100% static and production-ready**.
+### 1. Deploying to Streamlit Community Cloud (https://streamlit.io):
+1. Sign in to **[share.streamlit.io](https://share.streamlit.io)** using your GitHub account.
+2. Click **"New App"**.
+3. Select your repository: **`akhyashukla03/zeptomvp`**.
+4. Set Main file path: **`streamlit_app.py`** (or **`app.py`**).
+5. Click **"Deploy!"**. Streamlit will automatically install `requirements.txt` and launch your live application URL!
 
-You can deploy it live for free in under 30 seconds:
+### 2. Running Streamlit App Locally:
+```bash
+python -m streamlit run streamlit_app.py
+```
+
+### 3. Alternative 1-Click Static Deployments:
 * **Netlify**: Drag & drop folder to [app.netlify.com/drop](https://app.netlify.com/drop).
 * **Vercel**: Import repository at [vercel.com/new](https://vercel.com/new).
 * **GitHub Pages**: Enable Pages in Repository Settings ➔ Pages.
