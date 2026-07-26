@@ -41,19 +41,19 @@ def build_pptx_deck():
             "tagline": "QUICK COMMERCE GOT FASTER. CATEGORY CHOICE GOT HARDER.",
             "title": "1. Context & Brief: Solving Category Tunnel Vision in Quick Commerce",
             "subtitle": "Why 71.2% of habitual grocery buyers checkout in <45s without exploring high-margin non-grocery categories",
-            "box1_title": "📋 THE STRATEGIC BRIEF & SCOPE",
+            "box1_title": "📋 THE STRATEGIC BRIEF & PM SCOPE",
             "box1_bullets": [
                 "Role & Scope: PM on Zepto Growth Team driving non-grocery cross-category trial.",
                 "Problem Core: 71.2% of active users strictly repeat daily grocery orders (Milk, Eggs, Bread).",
-                "Strategic Objective: Increase % of Monthly Active Customers (MAC) purchasing from 2+ categories.",
-                "Target Categories: Personal Care, Pet Care, WFH Gadgets, Household Utilities, Baby Care."
+                "Strategic Objective: Lift Monthly Active Customers (MAC) purchasing from 2+ categories from 8.2% to 28.4%.",
+                "Target Categories: Personal Care (35% margin), Pet Supplies (45% margin), Electronics (30% margin), Baby Care (35% margin)."
             ],
             "box2_title": "⚡ ZEPTO SCALE VS MARGIN COLLAPSE",
             "box2_bullets": [
                 "Scale Milestone: $1.2B ARR across 500+ Dark Store hubs in Tier-1 Metro markets.",
                 "Grocery Tunnel Vision: 71.2% order concentration in low-margin staples (~10% gross margin).",
                 "Category Drop-off Cliff: Non-grocery trial drops to <8.2% of MAC.",
-                "Margin Expansion Moat: Personal care & pet supplies yield 35%–50% gross margins."
+                "Margin Formula: Blended Margin = (Grocery % * 10%) + (Non-Grocery % * 40%) → Unlocks +300bps EBITDA."
             ],
             "bottom_title": "🔗 DIRECT REVIEWER DATA & LIVE APP ACCESS LINKS",
             "bottom_text": "Live Streamlit App: https://zeptomvp.streamlit.app | GitHub Repository: https://github.com/akhyashukla03/zeptomvp | Raw Reviews JSON Data: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json"
