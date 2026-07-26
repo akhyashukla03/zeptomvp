@@ -88,13 +88,16 @@ if os.path.exists(html_path):
     with open(html_path, "r", encoding="utf-8") as f:
         html_content = f.read()
 
+def render_portal(height=1000):
+    if html_content:
+        components.html(html_content, height=height, scrolling=True)
+    else:
+        st.error("index.html not found.")
+
 if page == "🚀 Full Interactive Web Portal & MVP":
     st.title("⚡ Zepto Cross-Category Discovery Portal & Interactive MVP")
     st.caption("Full production web portal featuring AI PM Engine, Survey Scorecards, Interactive iPhone Simulator, and Pitch Deck.")
-    if html_content:
-        components.html(html_content, height=1050, scrolling=True)
-    else:
-        st.error("index.html not found.")
+    render_portal(1100)
 
 elif page == "📊 Part 1: AI PM Discovery Engine":
     st.title("📊 Part 1: AI-Powered PM Discovery Engine")
@@ -107,8 +110,7 @@ elif page == "📊 Part 1: AI PM Discovery Engine":
     * **19.9% Bulk Buy Mismatch**: Preference for buying diapers & pet food in bulk on DMart or Amazon.
     * **15.3% Ecological Guilt**: Friction around single-item plastic packaging waste and rider trips.
     """)
-    if html_content:
-        components.html(html_content, height=900, scrolling=True)
+    render_portal(950)
 
 elif page == "👥 Part 2: Primary User Research (N=22)":
     st.title("👥 Part 2: Primary User Research & Cohort Validation")
@@ -120,14 +122,12 @@ elif page == "👥 Part 2: Primary User Research (N=22)":
     
     st.markdown("---")
     st.subheader("🗣️ 5 Metro User Transcripts (Bangalore, Mumbai, Delhi, Gurgaon)")
-    if html_content:
-        components.html(html_content, height=900, scrolling=True)
+    render_portal(950)
 
 elif page == "📱 Part 3: Zepto AI MVP Simulator":
     st.title("📱 Part 3: Interactive Zepto AI MVP Simulator")
     st.info("💡 Try: 1. Switching customer personas, 2. Claiming a free trial sample, 3. Running SkinMatch AI, 4. Tapping 'View Storage Audit' for Model B CCTV logs!")
-    if html_content:
-        components.html(html_content, height=950, scrolling=True)
+    render_portal(1000)
 
 elif page == "🖼️ Part 4: 10-Slide Pitch Deck (PDF/PPTX)":
     st.title("🖼️ Part 4: 10-Slide Pitch Deck Deliverables")
@@ -156,5 +156,4 @@ elif page == "🖼️ Part 4: 10-Slide Pitch Deck (PDF/PPTX)":
                 )
     
     st.markdown("---")
-    if html_content:
-        components.html(html_content, height=900, scrolling=True)
+    render_portal(950)
