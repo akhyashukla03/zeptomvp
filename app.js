@@ -471,31 +471,43 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Load JSON datasets dynamically or load fallback databases
 async function loadAllData() {
-  try {
-    const reviewsRes = await fetch("data/reviews_dataset.json");
-    if (!reviewsRes.ok) throw new Error();
-    reviewsData = await reviewsRes.json();
-  } catch (e) {
-    console.warn("Using fallback reviews data (CORS / local files direct execution).");
-    reviewsData = generateFallbackReviews();
+  if (window.reviewsData && window.reviewsData.length > 0) {
+    reviewsData = window.reviewsData;
+  } else {
+    try {
+      const reviewsRes = await fetch("data/reviews_dataset.json");
+      if (!reviewsRes.ok) throw new Error();
+      reviewsData = await reviewsRes.json();
+    } catch (e) {
+      console.warn("Using fallback reviews data (CORS / local files direct execution).");
+      reviewsData = generateFallbackReviews();
+    }
   }
 
-  try {
-    const interviewsRes = await fetch("data/interview_transcripts.json");
-    if (!interviewsRes.ok) throw new Error();
-    interviewsData = await interviewsRes.json();
-  } catch (e) {
-    console.warn("Using fallback user interviews data.");
-    interviewsData = FALLBACK_INTERVIEWS;
+  if (window.interviewsData && window.interviewsData.length > 0) {
+    interviewsData = window.interviewsData;
+  } else {
+    try {
+      const interviewsRes = await fetch("data/interview_transcripts.json");
+      if (!interviewsRes.ok) throw new Error();
+      interviewsData = await interviewsRes.json();
+    } catch (e) {
+      console.warn("Using fallback user interviews data.");
+      interviewsData = FALLBACK_INTERVIEWS;
+    }
   }
 
-  try {
-    const deckRes = await fetch("data/deck_content.json");
-    if (!deckRes.ok) throw new Error();
-    slidesData = await deckRes.json();
-  } catch (e) {
-    console.warn("Using fallback pitch deck content.");
-    slidesData = FALLBACK_DECK;
+  if (window.slidesData && window.slidesData.length > 0) {
+    slidesData = window.slidesData;
+  } else {
+    try {
+      const deckRes = await fetch("data/deck_content.json");
+      if (!deckRes.ok) throw new Error();
+      slidesData = await deckRes.json();
+    } catch (e) {
+      console.warn("Using fallback pitch deck content.");
+      slidesData = FALLBACK_DECK;
+    }
   }
 
   // Populate Dashboard Visuals

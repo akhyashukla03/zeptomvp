@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom Styling for Streamlit Sidebar & Header
+# Custom Styling for Streamlit Sidebar
 st.markdown("""
     <style>
     .stApp {
@@ -32,7 +32,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar Navigation
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/ thumb/8/87/Zepto_Logo.png/640px-Zepto_Logo.png", width=160) if False else None
 st.sidebar.title("⚡ Zepto PM Navigation")
 st.sidebar.markdown("**Growth PM Graduation Project**")
 
@@ -81,23 +80,58 @@ if os.path.exists(dataset_path):
             mime="application/json"
         )
 
-# Read index.html content for full embedding
-html_path = os.path.join(os.path.dirname(__file__), "index.html")
-html_content = ""
-if os.path.exists(html_path):
-    with open(html_path, "r", encoding="utf-8") as f:
-        html_content = f.read()
+# Helper function to build self-contained HTML bundle with inlined CSS, JS, and JSON Datasets
+def get_bundled_html():
+    base_dir = os.path.dirname(__file__)
+    index_path = os.path.join(base_dir, "index.html")
+    css_path = os.path.join(base_dir, "style.css")
+    js_path = os.path.join(base_dir, "app.js")
+    reviews_path = os.path.join(base_dir, "data", "reviews_dataset.json")
+    interviews_path = os.path.join(base_dir, "data", "interview_transcripts.json")
+    deck_path = os.path.join(base_dir, "data", "deck_content.json")
 
-def render_portal(height=1000):
-    if html_content:
-        components.html(html_content, height=height, scrolling=True)
-    else:
-        st.error("index.html not found.")
+    if not os.path.exists(index_path):
+        return "<h1>index.html not found</h1>"
+
+    with open(index_path, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # Inline CSS
+    if os.path.exists(css_path):
+        with open(css_path, "r", encoding="utf-8") as f:
+            css = f.read()
+        html = html.replace('<link rel="stylesheet" href="style.css">', f'<style>\n{css}\n</style>')
+
+    # Inline JSON Datasets before app.js
+    inlined_data_script = "<script>\n"
+    if os.path.exists(reviews_path):
+        with open(reviews_path, "r", encoding="utf-8") as f:
+            inlined_data_script += f"window.reviewsData = {f.read()};\n"
+    if os.path.exists(interviews_path):
+        with open(interviews_path, "r", encoding="utf-8") as f:
+            inlined_data_script += f"window.interviewsData = {f.read()};\n"
+    if os.path.exists(deck_path):
+        with open(deck_path, "r", encoding="utf-8") as f:
+            inlined_data_script += f"window.slidesData = {f.read()};\n"
+    inlined_data_script += "</script>\n"
+
+    # Inline JS
+    if os.path.exists(js_path):
+        with open(js_path, "r", encoding="utf-8") as f:
+            js = f.read()
+        html = html.replace('<script src="app.js"></script>', f'{inlined_data_script}\n<script>\n{js}\n</script>')
+
+    return html
+
+bundled_html = get_bundled_html()
+
+def render_portal(height=1100):
+    components.html(bundled_html, height=height, scrolling=True)
 
 if page == "🚀 Full Interactive Web Portal & MVP":
     st.title("⚡ Zepto Cross-Category Discovery Portal & Interactive MVP")
     st.caption("Full production web portal featuring AI PM Engine, Survey Scorecards, Interactive iPhone Simulator, and Pitch Deck.")
-    render_portal(1100)
+    render_portal(1150)
 
 elif page == "📊 Part 1: AI PM Discovery Engine":
     st.title("📊 Part 1: AI-Powered PM Discovery Engine")
@@ -110,7 +144,7 @@ elif page == "📊 Part 1: AI PM Discovery Engine":
     * **19.9% Bulk Buy Mismatch**: Preference for buying diapers & pet food in bulk on DMart or Amazon.
     * **15.3% Ecological Guilt**: Friction around single-item plastic packaging waste and rider trips.
     """)
-    render_portal(950)
+    render_portal(1000)
 
 elif page == "👥 Part 2: Primary User Research (N=22)":
     st.title("👥 Part 2: Primary User Research & Cohort Validation")
@@ -122,12 +156,12 @@ elif page == "👥 Part 2: Primary User Research (N=22)":
     
     st.markdown("---")
     st.subheader("🗣️ 5 Metro User Transcripts (Bangalore, Mumbai, Delhi, Gurgaon)")
-    render_portal(950)
+    render_portal(1000)
 
 elif page == "📱 Part 3: Zepto AI MVP Simulator":
     st.title("📱 Part 3: Interactive Zepto AI MVP Simulator")
     st.info("💡 Try: 1. Switching customer personas, 2. Claiming a free trial sample, 3. Running SkinMatch AI, 4. Tapping 'View Storage Audit' for Model B CCTV logs!")
-    render_portal(1000)
+    render_portal(1050)
 
 elif page == "🖼️ Part 4: 10-Slide Pitch Deck (PDF/PPTX)":
     st.title("🖼️ Part 4: 10-Slide Pitch Deck Deliverables")
@@ -156,4 +190,4 @@ elif page == "🖼️ Part 4: 10-Slide Pitch Deck (PDF/PPTX)":
                 )
     
     st.markdown("---")
-    render_portal(950)
+    render_portal(1000)
