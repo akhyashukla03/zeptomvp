@@ -40,7 +40,7 @@ page = st.sidebar.radio(
     [
         "🚀 Full Interactive Web Portal & MVP",
         "📊 Part 1: AI PM Discovery Engine",
-        "👥 Part 2: Primary User Research (N=22)",
+        "👥 Part 2: Primary User Research (N=24)",
         "📱 Part 3: Zepto AI MVP Simulator",
         "🖼️ Part 4: 10-Slide Pitch Deck (PDF/PPTX)"
     ]
@@ -50,23 +50,29 @@ page = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.subheader("📥 Download Project Deliverables")
 
-pdf_path = os.path.join(os.path.dirname(__file__), "Zepto_Growth_PM_Graduation_Project.pdf")
+pdf_path = os.path.join(os.path.dirname(__file__), "NL_Zepto_Growth_PM_Graduation_Project.pdf")
+if not os.path.exists(pdf_path):
+    pdf_path = os.path.join(os.path.dirname(__file__), "Zepto_Growth_PM_Graduation_Project.pdf")
+
 if os.path.exists(pdf_path):
     with open(pdf_path, "rb") as f:
         st.sidebar.download_button(
             label="📄 Download PDF Pitch Deck",
             data=f.read(),
-            file_name="Zepto_Growth_PM_Graduation_Project.pdf",
+            file_name="NL_Zepto_Growth_PM_Graduation_Project.pdf",
             mime="application/pdf"
         )
 
-pptx_path = os.path.join(os.path.dirname(__file__), "Zepto_Growth_PM_Graduation_Project.pptx")
+pptx_path = os.path.join(os.path.dirname(__file__), "NL_Zepto_Growth_PM_Graduation_Project.pptx")
+if not os.path.exists(pptx_path):
+    pptx_path = os.path.join(os.path.dirname(__file__), "Zepto_Growth_PM_Graduation_Project.pptx")
+
 if os.path.exists(pptx_path):
     with open(pptx_path, "rb") as f:
         st.sidebar.download_button(
             label="📊 Download PPTX Pitch Deck",
             data=f.read(),
-            file_name="Zepto_Growth_PM_Graduation_Project.pptx",
+            file_name="NL_Zepto_Growth_PM_Graduation_Project.pptx",
             mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"
         )
 
