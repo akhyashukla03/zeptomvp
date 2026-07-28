@@ -400,7 +400,7 @@ const PERSONA_CONFIGS = {
   "pet": {
     name: "Pooja (Pet Owner)",
     defaultCart: ["milk", "bread", "eggs"],
-    nudgeIntro: "We see you are restocking breakfast essentials. Do you have a pet? Grab this quick, high-margin add-on at a discount!",
+    nudgeIntro: "🧠 Why Recommended: You regularly buy morning breakfast staples and haven't tried pet care yet. Try risk-free with 10-min instant inspection or claim a 0-CAC 30g trial sample in your grocery bag!",
     nudgeProduct: {
       name: "Temptations Cat Treats (Chicken)",
       qty: "85g pack",
@@ -410,13 +410,13 @@ const PERSONA_CONFIGS = {
       category: "Pet Supplies",
       discount: "30% OFF",
       badgeTrust: "Certified Brand Distributor",
-      badgeReturn: "Free Replacement On Damage"
+      badgeReturn: "⚡ 10-Min Instant Try & Return"
     }
   },
   "beauty": {
     name: "Neha (Skincare Fan)",
     defaultCart: ["milk", "bananas", "coriander"],
-    nudgeIntro: "Looking for daily freshness? We noticed you haven't explored our beauty store. Get this absolute favorite cleanser in 10 minutes!",
+    nudgeIntro: "🧠 Why Recommended: You regularly buy daily dairy & fresh produce and haven't tried personal care yet. Includes 10-min instant shade/product inspection & 0-CAC 15ml trial sample!",
     nudgeProduct: {
       name: "Cetaphil Gentle Skin Cleanser",
       qty: "125ml bottle",
@@ -426,13 +426,13 @@ const PERSONA_CONFIGS = {
       category: "Beauty & Grooming",
       discount: "30% OFF",
       badgeTrust: "100% Brand Authenticity Seal",
-      badgeReturn: "Hygienic Sealed Delivery Bag"
+      badgeReturn: "⚡ 10-Min Instant Try & Return"
     }
   },
   "electronics": {
     name: "Karan (WFH Gadgets)",
     defaultCart: ["chips", "eggs", "bread"],
-    nudgeIntro: "WFH routine essentials? Don't let low battery slow you down. Order this emergency high-speed charging cable to save your day!",
+    nudgeIntro: "🧠 Why Recommended: You regularly order WFH snacks & breakfast and haven't tried tech accessories yet. Includes DeviceLink auto-detect & 10-min instant try-and-return guarantee!",
     nudgeProduct: {
       name: "Portronics Braided USB-C Cable",
       qty: "1.2 meter",
@@ -442,23 +442,23 @@ const PERSONA_CONFIGS = {
       category: "Electronics",
       discount: "33% OFF",
       badgeTrust: "Safe-Charging Chip Built-in",
-      badgeReturn: "7-Day Instant Replacement Policy"
+      badgeReturn: "⚡ 10-Min Instant Try & Return"
     }
   },
   "household": {
     name: "Ramesh (Home Utility)",
     defaultCart: ["vim", "potato", "coriander"],
-    nudgeIntro: "Cleaning up? Keep your kitchen pristine. Match your dishwashing gel with the #1 recommended kitchen scrubber bundle!",
+    nudgeIntro: "🧠 Why Recommended: You regularly order dishwash gel & fresh veggies. Get convenience-justified top-up utilities with supermarket price matching and 10-min doorstep inspection!",
     nudgeProduct: {
-      name: "Scotch-Brite Kitchen Scrub (3-Pack)",
-      qty: "3 units pack",
-      price: 45,
-      mrp: 65,
+      name: "Scotch-Brite Scrub Pad Combo",
+      qty: "3-Pack Combo",
+      price: 85,
+      mrp: 120,
       emoji: "🧹",
       category: "Household Essentials",
-      discount: "30% OFF",
-      badgeTrust: "Value Bundle Saving Pack",
-      badgeReturn: "MRP Price Matched to DMart"
+      discount: "29% OFF",
+      badgeTrust: "DMart Price Match Guarantee",
+      badgeReturn: "⚡ 10-Min Instant Try & Return"
     }
   }
 };
