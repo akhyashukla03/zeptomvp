@@ -40,7 +40,7 @@ def build_pptx_deck():
         {
             "slide_num": 1,
             "tagline": "AI-POWERED TRUST-LED DISCOVERY FOR CROSS-CATEGORY GROWTH",
-            "title": "1. Context & Business Goal: Converting Daily Grocery Habits into Low-Risk Non-Grocery Trial",
+            "title": "1. Zepto Expands Blended Gross Margin (+300bps) by Converting Daily Grocery Habits into Recurring Multi-Category Buying",
             "subtitle": "The barrier is not lack of demand for new categories; it is low-trust, low-risk trial inside a grocery-first habit.",
             "box1_title": "📋 STRATEGIC BRIEF & PM SCOPE",
             "box1_bullets": [
@@ -61,21 +61,21 @@ def build_pptx_deck():
         },
         {
             "slide_num": 2,
-            "tagline": "FAST EMERGENCY UTILITY VS TRUSTED PLANNED DESTINATION",
-            "title": "2. Frequent Grocery Users Buy Planned Non-Grocery Items Elsewhere Due to Lack of Trust & Risk-Free Trial",
-            "subtitle": "Frequent grocery users do not expand into non-grocery categories because QCommerce is perceived as a fast emergency utility.",
+            "tagline": "CONVENIENCE-JUSTIFIED TOP-UPS VS PLANNED BULK BUYS",
+            "title": "2. Users Leak Planned Non-Grocery Spending to Amazon/DMart; Phase 1 Targets Convenience-Justified Small Baskets, Not Bulk Buys",
+            "subtitle": "Conceding planned bulk buys (10kg pet food, 50-pack diapers); targeting convenience-justified top-ups where QCommerce wins.",
             "box1_title": "⭐ WHAT THE ECOSYSTEM HAS SOLVED",
             "box1_bullets": [
                 "10-Minute Hyper-Local Delivery Speed (Zepto, Blinkit, Instamart).",
                 "Dark Store Density & Real-Time Stock (500+ Dark Stores).",
                 "Sub-Second Cart Search & Auto-Complete UI."
             ],
-            "box2_title": "❌ WHAT NOBODY HAS SOLVED (THE PURCHASING LEAKAGE)",
+            "box2_title": "❌ PURCHASING LEAKAGE & SCOPE CONCESSION",
             "box2_bullets": [
                 "Purchasing Leakage: 83% of surveyed users (20/24) buy planned non-grocery items outside QCommerce on Amazon/Nykaa/DMart [User Survey, N=24].",
-                "Quality & Expiry Fear: 20.1% of discovery subset (134/667) fear heat degrades dark store inventory [Synthetic Corpus, 667 subset].",
-                "Return & Refund Anxiety: 17% of surveyed users (4/24) cite refund chatbot loops as top barrier [User Survey Q4, N=24].",
-                "Risk-Free Product Sampling: 0-CAC sampling moat completely unaddressed by incumbent ad banners."
+                "Explicit Scope Concession: We do NOT chase planned bulk buys (10kg pet kibble, jumbo diapers) in Phase 1 where DMart wins on unit economics.",
+                "Phase 1 Target SKUs: Convenience-justified, impulse-friendly top-ups (single face serum, pet treats, travel grooming, batteries) where 10-min speed wins.",
+                "Trust & Quality Friction: 20.1% of discovery reviews (134/667) fear heat degrades dark store items; 17% (4/24) fear refund bot loops."
             ],
             "bottom_title": "★ CORE THESIS TESTED & VALIDATED",
             "bottom_text": "Users abandon non-grocery discovery not because they lack desire, but because the financial and quality cost of a wrong/expired non-grocery buy is invisible until delivered."
@@ -83,7 +83,7 @@ def build_pptx_deck():
         {
             "slide_num": 3,
             "tagline": "AI REVIEW WORKFLOW & PRIMARY RESEARCH SYNTHESIS",
-            "title": "3. AI Review Pipeline Identified Recurring Barriers, Then Primary Research Validated 3 Core Blocker Buckets",
+            "title": "3. Synthetic Review Corpus & Primary Survey Isolate 3 Core Barriers: Trust, Purchase-Mode Mismatch, and Low Salience",
             "subtitle": "Synthesizing synthetic review patterns and primary survey responses into 3 actionable barrier buckets.",
             "box1_title": "📊 AI REVIEW PIPELINE & SYNTHETIC CORPUS (2,000 ITEMS)",
             "box1_bullets": [
@@ -103,13 +103,13 @@ def build_pptx_deck():
         {
             "slide_num": 4,
             "tagline": "HIGH-FREQUENCY GROCERY BUYERS WHO LEAK NON-GROCERY SPEND",
-            "title": "4. Target Segment: High-Frequency Grocery Users Open to Low-Risk Adjacent Category Trials",
-            "subtitle": "Targeting retained grocery refuelers who already trust Zepto for daily essentials but buy non-groceries elsewhere.",
+            "title": "4. High-Frequency Grocery Refillers (79% Weekly+) Form the Prime Wedge to Intercept Planned Non-Grocery Restocks",
+            "subtitle": "Targeting retained grocery refuelers and using grocery cadence to intercept Amazon purchases 2 days before restock.",
             "box1_title": "📊 TARGET COHORT PROFILE & RATIONALE",
             "box1_bullets": [
                 "Cohort Definition: High-frequency grocery users (79% order weekly+, 19/24) who leak non-grocery spend to Amazon/Nykaa (83%, 20/24).",
                 "Strategic Fit: Retained users with high basket frequency; lower CAC than acquiring new users.",
-                "Behavioral Obstacle: Code quick-commerce strictly as an urgent emergency utility, avoiding non-grocery items due to perceived quality risk."
+                "Predictive Restock Interception: Grocery restock cadence predicts non-grocery replenishment timing, triggering prompts 2 days before Amazon order."
             ],
             "box2_title": "👤 TARGET PERSONA: NEHA (SKINCARE FAN)",
             "box2_bullets": [
@@ -124,60 +124,60 @@ def build_pptx_deck():
         },
         {
             "slide_num": 5,
-            "tagline": "GROCERIES BUILD DAILY RETENTION. NON-GROCERIES BUILD PROFIT MARGINS.",
-            "title": "5. Eliminating Trial Barriers Converts High-Frequency Grocery Traffic into High-Margin LTV",
-            "subtitle": "Financial flywheel model driven by zero-CAC sampling and loyalty point cross-subsidization.",
+            "tagline": "SUPPLY-SIDE MONETIZATION & UNIT ECONOMICS RIGOR",
+            "title": "5. Brand-Funded Monetization Yields Positive Unit Economics with Immediate Payback on Cross-Category LTV",
+            "subtitle": "100% free for users (no paywall); FMCG brands fund trial samples for closed-loop conversion attribution.",
             "box1_title": "📈 TAM / SAM / SOM OPPORTUNITY SIZING",
             "box1_bullets": [
                 "TAM: $18.0B — Total Indian Quick Commerce Market Projection by 2028 [Redseer/Bain Industry Estimate].",
                 "SAM: $4.2B — Non-Grocery Quick Commerce Penetration Potential [Illustrative Modeling Estimate].",
                 "SOM: $480M — Zepto Cross-Category Discovery Capture Opportunity [Illustrative Modeling Estimate]."
             ],
-            "box2_title": "🎯 VALIDATED CONVERSION LEVERS (N=24)",
+            "box2_title": "💰 UNIT ECONOMICS & CONVERSION LEVERS (N=24)",
             "box2_bullets": [
-                "Risk-Free Trial: 38% of survey respondents (9/24) state a free trial sample in their bag would drive new category trial.",
-                "Loyalty Lock-In: 63% of survey respondents (15/24) prefer loyalty points tied to daily essentials unlocked by trying new categories.",
-                "Rider Swap Trust: 92% of survey respondents (22/24) rate a 15-minute doorstep swap guarantee between 3.0 and 5.0 on trust impact."
+                "100% Free User Access: No user paywall (suppresses funnel). Monetized via B2B brand listing fee (+Rs. 15/sample).",
+                "Unit Economics per Sample: Brand Fee (+Rs. 15) - Pack/Fulfill Cost (-Rs. 4) = Net Surplus (+Rs. 11/trial).",
+                "Incremental Customer LTV: +Rs. 420/year from converted 2+ category buyers -> Immediate Payback (<1st order).",
+                "Validated Triggers: 38% trial via sample (9/24), 63% loyalty link (15/24), 92% doorstep swap trust (22/24)."
             ],
             "bottom_title": "💡 FINANCIAL FLYWHEEL SUMMARY",
             "bottom_text": "Shifting grocery refillers to 35%–50% margin categories expands gross margin by +300bps and captures $480M SOM [Illustrative Modeling Estimate]."
         },
         {
             "slide_num": 6,
-            "tagline": "STRATEGIC ALTERNATIVES & PRIORITIZATION MATRIX",
-            "title": "6. Strategic Comparison: Why Trust-Led In-Bag Sampling Beats Ad Banners & Discounting",
-            "subtitle": "Comparing alternative growth levers demonstrates why in-bag trial provides the highest impact at lowest effort.",
-            "box1_title": "⚡ ALTERNATIVES VS TRUST-LED SAMPLING",
+            "tagline": "COMPOUNDING DATA FLYWHEEL VS COPIABLE PROMOS",
+            "title": "6. Zepto's Defensibility Lies in its First-Party Purchase-Graph Flywheel and Closed-Loop Brand Attribution, Not Copiable Promos",
+            "subtitle": "Promos and swap policies are copiable; first-party purchase graphs and B2B attribution create true defensibility.",
+            "box1_title": "⚡ TRIVIALLY COPIABLE VS COMPOUNDING MOATS",
             "box1_bullets": [
-                "Homepage Banners: Ignored due to impulse fatigue (20.1% review subset); zero impact on trust.",
-                "Broad Discounting: Destroys unit margins without addressing quality/expiry fears.",
-                "Ops Overhaul: Requires massive CapEx before validating customer demand.",
-                "Trust-Led Sampling (MVP): 0-CapEx, 0-CAC trial delivered inside active grocery bags with grocery-linked rewards."
+                "Trivially Copiable Promos: Free samples, coupons, and 15-min swap policies can be copied by Blinkit/Instamart in a week.",
+                "Compounding Data Moat 1: Zepto's first-party grocery purchase graph predicts adjacent category readiness and restock timing.",
+                "Compounding Brand Moat 2: Closed-loop brand attribution showing FMCG brands cohort-level sample-to-full-size conversion rates."
             ],
             "box2_title": "🏆 THREE STRATEGIC HORIZONS (RICE MATRIX)",
             "box2_bullets": [
-                "Horizon 1 (MVP) — Discovery Pass & B2B Sampling: Brand-funded trial samples in grocery bags at Rs. 0 [0-CapEx, 0-CAC]. RICE: 210.0 [Illustrative].",
-                "Horizon 2 (Growth) — 15-Min Doorstep Swap & Storage Audit: Reverse logistics rider replacement + dark store temperature telemetry [Operational CapEx]. RICE: 180.0 [Illustrative].",
-                "Horizon 3 (Vision) — Category Quest Loyalty Engine: Multi-category streak board unlocking grocery point multipliers [RICE: 160.0]."
+                "Horizon 1 (MVP) — Discovery Pass, B2B Sampler & Category Streak Engine: 0-CapEx bag sampler + monthly streak habit loop. RICE: 210.0 [Illustrative].",
+                "Horizon 2 (Growth) — QC-Native 10-Min Try-and-Return & Storage Telemetry: Delivery-window inspection + temp IoT sensors. RICE: 180.0 [Illustrative].",
+                "Horizon 3 (Vision) — Predictive Restock Interception Engine: Cadence-based Amazon interception system [RICE: 160.0]."
             ],
             "bottom_title": "💡 WHY HORIZON 1 (MVP) WINS FIRST",
             "bottom_text": "B2B Sampling requires zero capital expenditure (brands fund sample units) and addresses the core barrier (risk) right inside recurring grocery bags."
         },
         {
             "slide_num": 7,
-            "tagline": "MVP: RECOMMEND, DE-RISK, AND REWARD ADJACENT CATEGORY TRIALS",
-            "title": "7. De-Risked MVP Suite: Integrating AI Recommendations, Trust Cues, and Trial Incentives",
-            "subtitle": "Six built MVP capabilities convert routine grocery checkouts into trusted multi-category exploration.",
+            "tagline": "DE-RISKED MVP: SAMPLER, QC-NATIVE TRY-RETURN & STREAKS",
+            "title": "7. The Discovery MVP Embeds 0-CAC Sampling, Category Streaks, and 10-Minute Instant Try-and-Return in the Grocery Bag",
+            "subtitle": "Combining 0-CAC trial on-ramps with monthly category streak loyalty loops to drive recurring MCER repeat.",
             "box1_title": "💎 BUILT MVP CAPABILITIES 1, 2 & 3",
             "box1_bullets": [
-                "1. 🧠 AI Recommendation & Explainability: Recommends adjacent category with clear context ('Because you regularly buy breakfast staples and haven't tried personal care').",
-                "2. 💎 0-CAC Trial Sample: Subscribers claim 1 free brand-sponsored sample (Cetaphil, Pedigree) in grocery bag at Rs. 0 [38% survey trigger, 9/24].",
-                "3. 🏷️ Risk Reduction Voucher: Post-trial nudge unlocks Rs. 100 category voucher for full-size items."
+                "1. 🧠 AI Recommendation & Explainability: Recommends adjacent category with clear context ('Recommended because you regularly buy breakfast staples and haven't tried personal care').",
+                "2. 💎 0-CAC In-Bag Trial Sample: Free brand sample (Cetaphil, Pedigree) inside grocery bag at Rs. 0 [38% survey trigger, 9/24].",
+                "3. ⚡ QC-Native Instant Try-and-Return: Delivery-window trial/inspection for non-sampleable items (beats Amazon on 10-min reverse logistics)."
             ],
             "box2_title": "🏆 BUILT MVP CAPABILITIES 4, 5 & 6",
             "box2_bullets": [
-                "4. 🏆 Incentive Link to Habit: 5-category streak board unlocks 2x points on daily milk/bread staples [63% survey response, 15/24].",
-                "5. 🚚 Trust Guarantee: 15-minute doorstep replacement promise for damaged/wrong items [92% survey trust rating, 22/24].",
+                "4. 🏆 Category Streak Engine (Moved to MVP): 5-sticker quest unlocking 2x points on daily milk/bread staples to drive monthly repeat [63% survey preference, 15/24].",
+                "5. 🏷️ Risk Reduction Voucher: Post-trial nudge unlocking Rs. 100 off full-size items (DISCOVERY100).",
                 "6. 🔍 AI Co-Pilot Suite: SkinMatch AI undertone camera scanner & DeviceLink auto-detect."
             ],
             "image_path": mvp_img if os.path.exists(mvp_img) else None,
@@ -187,14 +187,14 @@ def build_pptx_deck():
         {
             "slide_num": 8,
             "tagline": "FROM A TYPED GROCERY CART TO A TRUSTED CROSS-CATEGORY ORDER. SAME APP, TWO VIEWS.",
-            "title": "8. Lightweight Decision Engine Allocates B2B Samples Without Adding Picking SLA Latency",
+            "title": "8. Four-Layer Decision Engine Powers Predictive Restock Nudges and Closed-Loop Brand Attribution",
             "subtitle": "Four-layer architecture integrates brand inventory, cart triggers, and loyalty ledgers.",
             "box1_title": "⚙ SYSTEM ARCHITECTURE (4 CORE LAYERS)",
             "box1_bullets": [
-                "Layer 1 (Client UI): Mobile Cart UI, B2B Sampler Carousel, Streak Board, SkinMatch Viewfinder.",
+                "Layer 1 (Client UI): Mobile Cart UI, B2B Sampler Carousel, Category Streak Board, SkinMatch Viewfinder.",
                 "Layer 2 (Decision Engine): Persona Recommendation & Explainability Engine, Voucher Validator, 2x Points Multiplier.",
                 "Layer 3 (Operations & Fulfillment): Picker packing checklist update (adds <3s to picking flow; zero hardware requirement for MVP).",
-                "Layer 4 (B2B Marketplace Portal): Brand sample inventory ledger tracking sample distribution and conversion rates."
+                "Layer 4 (B2B Marketplace Portal): Brand sample inventory ledger tracking sample-to-full-size conversion rates for FMCG brands."
             ],
             "box2_title": "🔄 EMOTION & METRIC MAPPING ACROSS STAGES",
             "box2_bullets": [
@@ -208,14 +208,15 @@ def build_pptx_deck():
         },
         {
             "slide_num": 9,
-            "tagline": "EVERY METRIC IS TIED TO THE NORTH STAR: MONTHLY CATEGORY EXPLORATION RATE (MCER).",
-            "title": "9. Success Is Measured by Monthly Category Exploration Rate (MCER) & De-Risked Conversion",
-            "subtitle": "North Star metric supported by leading indicators, conversion funnels, and SLA guardrails.",
-            "box1_title": "⭐ NORTH STAR & LEADING INDICATORS",
+            "tagline": "INCREMENTAL LIFT VIA RANDOMIZED HOLDOUT GROUPS",
+            "title": "9. MCER Growth (8.2% -> 28.4%) Is Validated via Randomized Holdout Groups and SLA Guardrails",
+            "subtitle": "Measuring true incremental lift via control groups rather than raw attach proxies.",
+            "box1_title": "⭐ NORTH STAR & INCREMENTALITY FRAMEWORK",
             "box1_bullets": [
                 "North Star Metric: Monthly Category Exploration Rate (MCER) — % of MACs purchasing from 2+ categories/month.",
                 "• Baseline: 8.2% MAC -> Target: 28.4% MAC in 12 months [Illustrative Trajectory Target].",
-                "Leading Indicators: Sample attach rate to grocery carts (target >35%), Trust-cue interaction CTR, Sample-to-full-size conversion (target 12% in 14 days), % users redeeming grocery-linked point streak."
+                "Randomized Holdout Control: 10% control group (no sample/nudge) vs treatment to measure true incremental causal lift.",
+                "Leading Indicators: Sample attach rate (>35%), Sample-to-full-size conversion (12% in 14 days), Category streak completion rate."
             ],
             "box2_title": "🛡️ OPERATIONAL GUARDRAIL METRICS",
             "box2_bullets": [
@@ -229,15 +230,15 @@ def build_pptx_deck():
         },
         {
             "slide_num": 10,
-            "tagline": "DISCOVERY PASS TURNS HESITATION INTO REPEATED, TRUSTED RUNS AND SCALES NEXT-TIER ARR.",
-            "title": "10. Brand-Sponsored Listing Fees Fund Sampling Operations While Category Streaks Drive Retention",
-            "subtitle": "Phased rollout strategy mitigates inventory risk and validates unit economics.",
-            "box1_title": "🚀 3-PHASE ROLLOUT & MONETIZATION",
+            "tagline": "NON-SAMPLEABLE CEILINGS & PHASED ROLLOUT ROADMAP",
+            "title": "10. Phased Rollout Overcomes Sample Supply Ceilings via Instant Try-and-Return in Non-Sampleable Categories",
+            "subtitle": "Addressing high-ticket non-sampleable categories via instant try-and-return while monetizing brand attribution.",
+            "box1_title": "🚀 3-PHASE ROLLOUT & NON-SAMPLEABLE STRATEGY",
             "box1_bullets": [
+                "Non-Sampleable Strategy: High-ticket items (Electronics, Baby Gear) bypass sampling via 10-min Instant Try-and-Return.",
                 "Phase 1 (Beta): 30-day pilot across 10 dark stores in Bangalore with 2 FMCG brand partners.",
                 "Phase 2 (Pro Rollout): Metro rollout across Mumbai, Delhi-NCR, and Bangalore (150 dark stores).",
-                "Phase 3 (GA): Full network rollout across 500+ dark store hubs.",
-                "Monetization: Rs. 59/mo Pass + B2B Brand Listing Fees (Brands pay Rs. 15 per distributed sample) [Illustrative Assumption]."
+                "Phase 3 (GA): Full network rollout across 500+ dark store hubs."
             ],
             "box2_title": "🔗 ANONYMOUS REVIEWER DATA ACCESS DIRECTORY",
             "box2_bullets": [
