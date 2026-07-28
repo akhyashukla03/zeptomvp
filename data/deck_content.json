@@ -3,33 +3,33 @@
     "slide_number": 1,
     "tagline": "QUICK COMMERCE GOT FASTER. CATEGORY CHOICE GOT HARDER.",
     "step_name": "Context",
-    "title": "1. Context & Brief: Solving Category Tunnel Vision in Quick Commerce",
-    "subtitle": "Why 71.2% of habitual grocery buyers checkout in <45s without exploring high-margin non-grocery categories",
+    "title": "1. Users Repeat Grocery Routine Orders in Sub-45s Checkouts Without Exploring High-Margin Categories",
+    "subtitle": "High delivery speed drives daily staple retention, but routine habit loops create category tunnel vision.",
     "brief": "Role & Scope: PM on Zepto Growth Team driving non-grocery cross-category trial.",
     "scale_vs_collapse": [
-      "Scale Milestone: $1.2B ARR across 500+ Dark Store hubs in Tier-1 Metro markets.",
-      "Grocery Tunnel Vision: 71.2% order concentration in low-margin staples (~10% gross margin).",
-      "Category Drop-off Cliff: Non-grocery trial drops to <8.2% of MAC.",
-      "Margin Expansion Moat: Personal care & pet supplies yield 35%–50% gross margins."
+      "Routine Tunnel Vision: 71.2% review-mention share of grocery staples in synthetic corpus shows heavy grocery discussion dominance [Synthetic Corpus, 2,000 items].",
+      "The Margin Disconnect: Daily staples yield ~10% gross margin vs 35%–50% for Beauty & Pet Care [Illustrative Assumption].",
+      "Strategic Objective: Lift Monthly Active Customers (MAC) buying from 2+ categories from 8.2% to 28.4% [Illustrative Target].",
+      "Margin Formula: Blended Margin = (Grocery % * 10%) + (Non-Grocery % * 40%) -> Unlocks +300bps EBITDA [Illustrative Modeling Estimate]."
     ],
-    "the_paradox": "Live Streamlit App: https://zeptomvp.streamlit.app | GitHub: https://github.com/akhyashukla03/zeptomvp | Raw Reviews JSON: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json"
+    "the_paradox": "Live Streamlit App: https://zeptomvp.streamlit.app | Public Code & Dataset: NL_Zepto_Growth_PM_Graduation_Project"
   },
   {
     "slide_number": 2,
-    "tagline": "$500M SPENT ON CHECKOUT AD BANNERS. $0 SPENT ON RISK-FREE TRIAL.",
-    "step_name": "Agent's Market",
-    "title": "2. Market & Blind Spot: Where Capital Was Spent vs Where Users Get Stuck",
-    "subtitle": "Why quick-commerce ecosystems optimized 10-minute speed but left category discovery unsolved",
+    "tagline": "AD BANNERS SPAM CHECKOUTS. USERS ABANDON NEW CATEGORIES OVER HIDDEN RISK.",
+    "step_name": "Market",
+    "title": "2. Platforms Optimized 10-Minute Logistics Speed but Ignored Risk-Free Product Trial",
+    "subtitle": "Ad banners fail because users abandon non-grocery discovery over invisible quality and return risks.",
     "blind_spot_solved": [
       {"layer": "10-Minute Delivery Speed", "status": "✅ Solved by Zepto, Blinkit, Instamart"},
       {"layer": "Dark Store Density & Stock", "status": "✅ 500+ Dark Store Hubs"},
-      {"layer": "App UI & Search Auto-Complete", "status": "✅ High speed search bar"}
+      {"layer": "Sub-Second Search UI", "status": "✅ Fast search bar auto-complete"}
     ],
     "blind_spot_unsolved": [
-      {"layer": "Dark Store Expiry & Hygiene Trust", "status": "❌ Nobody (20.1% friction metric)"},
-      {"layer": "Planned Buy Bulk Price-Matching", "status": "❌ Nobody (19.9% friction metric)"},
-      {"layer": "Risk-Free Product Sampling", "status": "❌ Nobody (0-CAC Unsolved Moat)"},
-      {"layer": "Return & Refund Bot Uncertainty", "status": "❌ Nobody (50% survey friction)"}
+      {"layer": "Purchasing Leakage", "status": "❌ 83% buy planned non-grocery outside QCommerce (20/24) [Survey, N=24]"},
+      {"layer": "Dark Store Expiry & Hygiene Trust", "status": "❌ 20.1% friction (134/667 subset) [Synthetic Corpus]"},
+      {"layer": "Return & Refund Bot Anxiety", "status": "❌ 17% cite refund chatbot loops as top barrier (4/24) [Survey Q4, N=24]"},
+      {"layer": "Risk-Free Product Sampling", "status": "❌ 0-CAC sampling moat unaddressed"}
     ],
     "core_thesis": "Users abandon non-grocery discovery not because they lack desire, but because the financial and quality cost of a wrong/expired non-grocery buy is invisible until delivered."
   },
@@ -37,18 +37,18 @@
     "slide_number": 3,
     "tagline": "THE PROBLEM ISN'T BANNER VISIBILITY. IT'S FINANCIAL & QUALITY RISK BEFORE CHECKOUT.",
     "step_name": "Research",
-    "title": "3. AI Discovery Engine: 2,000 Social Reviews & N=22 Survey Data",
-    "subtitle": "Synthesizing 10 multi-platform channels (Play Store, App Store, Reddit, Quora, LinkedIn, ProductHunt, Trustpilot, Twitter, MouthShut)",
+    "title": "3. Users Abandon New Categories Over Hidden Quality & Choice Risk, Not Lack of Awareness",
+    "subtitle": "Synthesis of synthetic complaint patterns and primary survey responses isolates core purchase blockers.",
     "survey_stats": [
-      {"stat": "2,000", "label": "Scraped Feedback Records (10 Platforms)"},
-      {"stat": "N=22", "label": "Live Audience Survey Responses"},
-      {"stat": "71.2%", "label": "Grocery Tunnel Vision Rate"},
-      {"stat": "35–50%", "label": "Gross Margin in Non-Grocery Items"}
+      {"stat": "2,000", "label": "Synthetic Review Corpus Items (10 Channels)"},
+      {"stat": "N=24", "label": "Primary User Survey Responses"},
+      {"stat": "83%", "label": "Buy Planned Non-Grocery Outside QCommerce (20/24)"},
+      {"stat": "79%", "label": "Power Users Ordering Weekly or More (19/24)"}
     ],
     "quotes": [
-      "\"Dataset Link: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json\"",
-      "\"Quality & Expiry Fear (20.1%): Fear active acids degrade in hot dark stores. - Neha, Bangalore\"",
-      "\"Planned Buy Mismatch (19.9%): Preference for buying diapers & pet food in bulk on DMart. - Dr. Shalini, Delhi\""
+      "\"Quality & Expiry Fear: 20.1% of discovery subset (134/667) fear heat degrades dark store items. [Synthetic Corpus]\"",
+      "\"Planned Buy Mismatch: 33% of surveyed users (8/24) cite planned bulk-buy habit mismatch as primary barrier. [Survey Q4, N=24]\"",
+      "\"Return Bot Uncertainty: 17% of surveyed users (4/24) cite refund chatbot loops as top blocker. [Survey Q4, N=24]\""
     ],
     "conclusion": "Users don't need intrusive checkout banner ads. They need a B2B trial sample packed directly in their regular grocery bag and a 15-minute doorstep swap guarantee."
   },
@@ -56,111 +56,110 @@
     "slide_number": 4,
     "tagline": "THEY USE ZEPTO EVERY MORNING. THEY JUST CAN'T TRUST NON-GROCERY ITEMS AT CHECKOUT.",
     "step_name": "Insights",
-    "title": "4. Behavioral Segmentation & Persona Deep-Dive (Figma UI Design)",
-    "subtitle": "Targeting the Cautious Explorer & Perfectionist Prompter cohorts with Figma UI Mockups",
+    "title": "4. Cautious Explorers Need Financial & Quality Validation Before Buying Non-Grocery Items",
+    "subtitle": "Behavioral mapping isolates power grocery buyers who hesitate on non-grocery trial.",
     "matrix": [
-      {"type": "Habitual Refiller (71%)", "desc": "Buys milk/bread daily, ignores all promotional banners."},
-      {"type": "Cautious Explorer (20%)", "desc": "Wants skincare/pet food but fears dark store product expiry."},
-      {"type": "Impulse Avoider (6%)", "desc": "Hates checkout dark patterns, delivery fees, and rain charges."},
-      {"type": "Routine Questor (3%)", "desc": "Converts when non-grocery buys cross-subsidize grocery savings."}
+      {"type": "Habitual Refillers", "desc": "Order daily staples in <45s; ignore promotional homepage banners."},
+      {"type": "Cautious Explorers", "desc": "Want personal care and pet items but fear receiving near-expiry dark store inventory."},
+      {"type": "Impulse Avoiders", "desc": "Skip checkout recommendations to avoid hidden fees or extra packaging."},
+      {"type": "Routine Questors", "desc": "Convert when non-grocery buys cross-subsidize daily grocery savings."}
     ],
     "persona_1": {
       "name": "Neha · 26 · Skincare Fan · Bangalore",
-      "jtbd": "When buying skincare, I want proof of dark-store storage temperature & batch freshness, so that I don't ruin my skin barrier.",
-      "quote": "\"If I saw a live dark-store storage temperature audit and got a free 15ml trial sample in my grocery bag, I'd switch from Nykaa immediately.\""
+      "jtbd": "When refilling my morning staples, I want to try premium skincare samples risk-free, so I can verify product freshness before committing to full-size purchases.",
+      "quote": "\"If I got a free 15ml trial sample in my grocery bag, I'd switch from Nykaa immediately.\""
     }
   },
   {
     "slide_number": 5,
     "tagline": "GROCERIES BUILD DAILY RETENTION. NON-GROCERIES BUILD PROFIT MARGINS.",
-    "step_name": "Problem Canvas",
-    "title": "5. Problem Canvas & Opportunity Sizing ($480M SOM)",
-    "subtitle": "Shifting low-margin grocery orders (~10% margin) to 35%–50% gross margin categories",
+    "step_name": "Canvas",
+    "title": "5. Eliminating Trial Barriers Converts High-Frequency Grocery Traffic into High-Margin LTV",
+    "subtitle": "Financial flywheel model driven by zero-CAC sampling and loyalty point cross-subsidization.",
     "tam_sam_som": {
-      "tam": "$18.0B — Total Indian Quick Commerce Market Projection by 2028.",
-      "sam": "$4.2B — Non-Grocery Quick Commerce Penetration Potential.",
-      "som": "$480M — Zepto Cross-Category Discovery Capture Opportunity."
+      "tam": "$18.0B — Total Indian Quick Commerce Market Projection by 2028 [Redseer/Bain Estimate].",
+      "sam": "$4.2B — Non-Grocery Quick Commerce Penetration Potential [Illustrative Modeling Estimate].",
+      "som": "$480M — Zepto Cross-Category Discovery Capture Opportunity [Illustrative Modeling Estimate]."
     },
     "impact_table": [
-      {"lever": "B2B Free Sampling", "current": "0% trial", "with_solution": "36% trial rate", "impact": "+4.5x Category Trial Rate"},
-      {"lever": "Routine Quest Streaks", "current": "10% margin", "with_solution": "2x Points on Staples", "impact": "+68% Retention Rate"},
-      {"lever": "15-Min Rider Swap", "current": "71% return fear", "with_solution": "91% trust score", "impact": "-50% Return Anxiety"}
+      {"lever": "Risk-Free Trial", "current": "0% trial", "with_solution": "38% trial rate (9/24)", "impact": "Drives New Category Trial"},
+      {"lever": "Loyalty Lock-In", "current": "10% margin", "with_solution": "63% prefer points (15/24)", "impact": "Tied to Daily Staples"},
+      {"lever": "Rider Swap Trust", "current": "71% return fear", "with_solution": "92% trust score (22/24)", "impact": "Eliminates Return Anxiety"}
     ]
   },
   {
     "slide_number": 6,
     "tagline": "THREE HORIZONS OF DISCOVERY - SAMPLE, SWAP, LOCK-IN.",
     "step_name": "Ideation",
-    "title": "6. Ideation & RICE Prioritization Matrix",
-    "subtitle": "Starting with the B2B Sampling Flywheel, expanding to reverse logistics rider swaps",
+    "title": "6. Horizon 1 Delivers Immediate 0-CAC Trial via Brand-Funded Grocery Bag Sampling",
+    "subtitle": "RICE scoring prioritizes low-effort, brand-funded sampling over operational hardware changes.",
     "horizons": [
-      {"name": "COMPASS LOOP (MVP)", "concept": "ZEPTO DISCOVERY PASS & B2B SAMPLING", "solves": "Trial Risk & Expiry Fears", "rice": "210.0"},
-      {"name": "TRUST SHIELD (Growth)", "concept": "15-MIN DOORSTEP RIDER SWAP & SHADE MATCH", "solves": "Return & Refund Bot Anxiety", "rice": "180.0"},
-      {"name": "ROUTINE QUESTS (Vision)", "concept": "ZEPTO ROUTINE QUESTS & CATEGORY STREAKS", "solves": "Long-Term Churn & Competitor Switching", "rice": "160.0"}
+      {"name": "HORIZON 1 (MVP)", "concept": "ZEPTO DISCOVERY PASS & B2B SAMPLING (0-CapEx)", "solves": "Trial Risk & Quality Fear", "rice": "210.0 [Illustrative]"},
+      {"name": "HORIZON 2 (Growth)", "concept": "15-MIN DOORSTEP SWAP & STORAGE AUDIT", "solves": "Return Anxiety & Dark Store Trust", "rice": "180.0 [Illustrative]"},
+      {"name": "HORIZON 3 (Vision)", "concept": "CATEGORY QUEST LOYALTY ENGINE", "solves": "Long-Term Churn & Competitor Switching", "rice": "160.0 [Illustrative]"}
     ]
   },
   {
     "slide_number": 7,
     "tagline": "THE SOLUTION: DISCOVERY PASS, THE TRIAL LAYER FOR ZEPTO.",
     "step_name": "MVP",
-    "title": "7. MVP Product Solution: Complete Feature Suite Breakdown",
-    "subtitle": "Showcasing all 6 built features converting grocery buyers to subscribers with Figma UI Mockup",
+    "title": "7. The Discovery Pass Embeds 0-CAC Brand Trial Samples Directly Into Routine Grocery Bags",
+    "subtitle": "Seamless 4-step loop converts routine grocery checkouts into multi-category exploration.",
     "steps": [
-      {"num": "1. SAMPLE", "title": "1-Click B2B Free Trial", "desc": "Subscribers claim 1 free 15ml trial sample (Cetaphil, Pedigree) riding inside regular grocery bags at Rs. 0."},
-      {"num": "2. AUDIT", "title": "Model B Storage Pass", "desc": "Surfaces live dark-store IoT temperature logs (18.2°C) & automated CCTV rack snapshots ($15/mo AWS S3 cost)."},
-      {"num": "3. CONVERT", "title": "Rs. 100 Discovery Voucher", "desc": "Post-trial nudge unlocking Rs. 100 off full-size products in new categories."},
-      {"num": "4. LOCK-IN", "title": "Category Streak Board", "desc": "5-Category Streak Board (🥛 Pantry, 🍿 Snacks, 💄 Beauty, 🐾 Pets, 🔌 Utility) unlocks 2x Grocery Points."}
+      {"num": "1. SAMPLE", "title": "0-CAC Brand Trial", "desc": "Subscribers claim 1 free brand sample (Cetaphil, Pedigree) inside grocery bag at Rs. 0 [38% survey response, 9/24]."},
+      {"num": "2. CONVERT", "title": "Voucher Nudge", "desc": "Post-trial notification unlocks Rs. 100 category voucher for full-size items."},
+      {"num": "3. LOCK-IN", "title": "Category Streaks", "desc": "5-category streak board unlocks 2x points on daily staples [63% survey response, 15/24]."},
+      {"num": "4. TRUST", "title": "Doorstep Swap", "desc": "15-minute doorstep replacement guarantee for damaged/wrong items [92% survey response, 22/24]."}
     ]
   },
   {
     "slide_number": 8,
     "tagline": "FROM A TYPED GROCERY CART TO A TRUSTED CROSS-CATEGORY ORDER. SAME APP, TWO VIEWS.",
-    "step_name": "Journey",
-    "title": "8. Technical Architecture & End-to-End System Flow",
-    "subtitle": "Behind-the-scenes logic powering sampling allocation, IoT telemetry, and loyalty points",
+    "step_name": "Architecture",
+    "title": "8. Lightweight Decision Engine Allocates B2B Samples Without Adding Picking SLA Latency",
+    "subtitle": "Four-layer architecture integrates brand inventory, cart triggers, and loyalty ledgers.",
     "architecture_layers": [
       {"layer": "Layer 1 (Client UI)", "tech": "Mobile Cart UI, B2B Sampler Carousel, Streak Board, SkinMatch Viewfinder."},
       {"layer": "Layer 2 (Decision Engine)", "tech": "Persona Recommendation Engine, Voucher Validator, 2x Points Multiplier."},
-      {"layer": "Layer 3 (Operations & IoT)", "tech": "Dark Store Temp Log API, CCTV Rack Snapshot Pipeline (AWS S3 7-day TTL)."},
-      {"layer": "Layer 4 (B2B Marketplace)", "tech": "Brand Sample Inventory Ledger (Cetaphil, Pedigree listing portal)."}
+      {"layer": "Layer 3 (Operations & Fulfillment)", "tech": "Picker packing checklist update (adds <3s to picking flow; zero hardware requirement for MVP)."},
+      {"layer": "Layer 4 (B2B Marketplace)", "tech": "Brand sample inventory ledger tracking sample distribution and conversion rates."}
     ]
   },
   {
     "slide_number": 9,
     "tagline": "EVERY METRIC IS TIED TO THE NORTH STAR: MONTHLY CATEGORY EXPLORATION RATE (MCER).",
     "step_name": "Metrics",
-    "title": "9. Success Metrics & 12-Month Trajectory (MCER: 8.2% → 28.4%)",
-    "subtitle": "Targeting 3.5x expansion in cross-category monthly active customers",
-    "north_star": "Monthly Category Exploration Rate (MCER): % of MACs purchasing from 2+ categories/month.",
+    "title": "9. Success Is Measured by Monthly Category Exploration Rate (MCER) Growth",
+    "subtitle": "Primary conversion metric supported by operational SLA and margin guardrails.",
+    "north_star": "Monthly Category Exploration Rate (MCER): % of Monthly Active Customers purchasing from 2+ categories/month.",
     "targets": [
-      {"period": "Baseline", "val": "8.2%"},
-      {"period": "Month 3 (Pilot)", "val": "14.5%"},
-      {"period": "Month 6 (Metro)", "val": "21.0%"},
-      {"period": "Month 12 Target", "val": "28.4%"}
+      {"period": "Baseline", "val": "8.2% MAC [Illustrative]"},
+      {"period": "Month 3 (Pilot)", "val": "14.5% MAC [Illustrative]"},
+      {"period": "Month 6 (Metro)", "val": "21.0% MAC [Illustrative]"},
+      {"period": "Month 12 Target", "val": "28.4% MAC [Illustrative]"}
     ],
     "guardrails": [
-      "Picker SLA Floor: Dark-store picking speed must stay below 60s (CCTV adds 0s delay).",
-      "S3 Cloud Cost Ceiling: AWS S3 photo storage capped below $20/month via 7-day TTL rules.",
-      "Checkout Drop-off Cap: Sample selection interaction must not increase cart drop-off (>0.2%)."
+      "Picker SLA Floor: Packing time addition capped at <3 seconds per order (zero hardware for MVP).",
+      "Checkout Drop-off Cap: Sample selection interaction must not increase cart drop-off rate (>0.2%).",
+      "S3 Cloud Cost Ceiling: AWS S3 photo storage capped below $20/month via 7-day TTL rules (Horizon 2 expansion)."
     ]
   },
   {
     "slide_number": 10,
     "tagline": "DISCOVERY PASS TURNS HESITATION INTO REPEATED, TRUSTED RUNS AND SCALES NEXT-TIER ARR.",
-    "step_name": "Risks + GTM",
-    "title": "10. Monetization, Phased Rollout & Reviewer Access Directory",
-    "subtitle": "Financial flywheel, 3-phase launch, 4 risk mitigations, and direct reviewer data links",
-    "monetization": "Live Streamlit: https://zeptomvp.streamlit.app | GitHub Repo: https://github.com/akhyashukla03/zeptomvp | Raw Data: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json",
+    "step_name": "GTM",
+    "title": "10. Brand-Sponsored Listing Fees Fund Sampling Operations While Category Streaks Drive Retention",
+    "subtitle": "Phased rollout strategy mitigates inventory risk and validates unit economics.",
+    "monetization": "Live Streamlit: https://zeptomvp.streamlit.app | Code & Dataset: NL_Zepto_Growth_PM_Graduation_Project | Raw Reviews: https://raw.githubusercontent.com/akhyashukla03/zeptomvp/main/data/reviews_dataset.json",
     "rollout": [
-      "Phase 1 (Beta): 10% Bangalore Cohort (30 days) with Cetaphil & Pedigree.",
-      "Phase 2 (Pro Rollout): All Tier-1 Metros (Mumbai, Delhi, Bangalore, Hyderabad).",
-      "Phase 3 (GA): Pan-India rollout across 500+ Dark Store hubs."
+      "Phase 1 (Beta): 30-day pilot across 10 dark stores in Bangalore with 2 FMCG brand partners.",
+      "Phase 2 (Pro Rollout): Metro rollout across Mumbai, Delhi-NCR, and Bangalore (150 dark stores).",
+      "Phase 3 (GA): Full network rollout across 500+ dark store hubs."
     ],
     "risks": [
-      {"risk": "HIGH - Dark Store Expiry Fears", "mitigation": "Model B Automated CCTV Snapshots & IoT Temp Logs ($15/mo)."},
-      {"risk": "HIGH - Return Bot Anxiety", "mitigation": "15-Minute Doorstep Rider Swap & Shade Match Shield."},
-      {"risk": "MEDIUM - Brand Supply Shortage", "mitigation": "Multi-brand fallback sampling pools."},
-      {"risk": "MEDIUM - Competitor Copying", "mitigation": "Category Streak Grocery Point Lock-In."}
+      {"risk": "Sample Supply Shortage", "mitigation": "Multi-brand fallback inventory pools."},
+      {"risk": "Return Bot Anxiety", "mitigation": "15-Minute Doorstep Rider Swap & Shade Match Shield."},
+      {"risk": "Competitor Replication", "mitigation": "Category Streak Grocery Point Lock-In on daily staples."}
     ]
   }
 ]
